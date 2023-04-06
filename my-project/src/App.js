@@ -6,7 +6,8 @@ function App() {
      return El({
       element: 'div',
       className: 'w-full h-full font-Inter ',
-      child:getStarted()
+      child:""
+      // onboarding()
     })
   
 }
