@@ -6,7 +6,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Inter_r :["Inter_r"],
+      },
+      colors:{
+        'shoa':"#sss"
+      },
+    },
   },
   plugins: [],
 }
