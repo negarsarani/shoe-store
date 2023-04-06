@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        Inter_r :["Inter_r"],
+        Inter_r :["Inter"],
       },
       colors:{
-        'shoa':"#sss"
+        'shoea':"#152536"
       },
     },
   },

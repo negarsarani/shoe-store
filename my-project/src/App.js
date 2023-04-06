@@ -1,10 +1,11 @@
 import El from './library/El';
+import { onboarding } from './pages/onboarding';
 function App() {
   
-    El({
+     return El({
       element: 'div',
-      className: 'w-full h-full',
-      child:"s"
+      className: 'w-full h-full font-Inter ',
+      child:onboarding()
     })
   
 }

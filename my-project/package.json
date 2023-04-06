@@ -15,6 +15,7 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
-    "navigo": "^8.11.1"
+    "navigo": "^8.11.1",
+    "vite-jsconfig-paths": "^2.0.1"
   }
 }
