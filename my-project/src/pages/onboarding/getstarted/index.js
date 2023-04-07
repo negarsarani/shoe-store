@@ -1,8 +1,19 @@
 import El from '@/library/El';
+import { descpages } from './descpages';
 
-export function getStarted(style) {
+export function getStarted() {
+  setTimeout(() => {
+    const getStarted = document.getElementById('getStarted');
+
+    getStarted.classList.remove('bg-Wallpaper-page2', 'translate-x-full');
+
+    getStarted.classList.add('-translate-x-full');
+    getStarted.innerHTML = '';
+    getStarted.append(descpages());
+  }, 2000);
   return El({
     element: 'div',
+    id: 'getStarted',
     className:
       "transition duration-500 ease-in-out transform bg-fixed translate-x-full h-full w-full flex flex-col justify-end bg-[url('/assets/img/Wallpaper-page2.png')]  bg-cover bg-center text-white",
     child: El({
