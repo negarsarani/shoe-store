@@ -9,7 +9,7 @@ function App() {
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
-    child: swiperFunc(),
+    child: descpages()
   });
 }
 export default App;

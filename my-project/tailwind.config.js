@@ -11,7 +11,8 @@ export default {
         Inter_r :["Inter"],
       },
       colors:{
-        'shoea':"#152536"
+        'shoea':"#152536",
+        'btn-black':"#212529"
       },
     },
   },
