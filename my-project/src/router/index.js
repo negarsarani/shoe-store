@@ -1,7 +1,10 @@
 import Cookies from 'js-cookie';
 import El from '../library/El';
-const isPrivate = (routesEl, child) =>
-  Cookies.get('user') && routesEl.appendChild(child);
+import Navigo from 'navigo';
+import { login } from '@/pages/login';
+
+// const isPrivate = (routesEl, child) =>
+// Cookies.get('user') && routesEl.appendChild(child);
 // export function Route() {
 //   const routes =
 //     document.getElementById('routes') ||
@@ -20,36 +23,23 @@ const isPrivate = (routesEl, child) =>
 //       break;
 //   }
 // }
-import Navigo from 'navigo'; // When using ES modules.
-
-const router = new Navigo('/');
 
 // Adding a route
-router
-  .on('/products/list', function () {
-    // display all the products
-  })
-  .resolve();
-
-//   Adding a main/root handler
-router
-  .on(function () {
-    // show home page here
-  })
-  .resolve();
-
-//   Adding multiple routes
-
-router
-  .on({
-    'products/:id': function () {
-      setContent('Products');
-    },
-    products: function () {
-      setContent('About');
-    },
-    '*': function () {
-      setContent('Home');
-    },
-  })
-  .resolve();
+export function routerFunc() {
+  const routediv = document.getElementById('routes');
+  const router = new Navigo('/');
+  router
+    .on('/wellcome', function () {
+      // display all the products
+    })
+    .on('/auth', function () {
+      routediv.innerHTML='',
+      routediv.append(login())
+      // show home page here
+    })
+    .on('/home', function () {
+      // show home page here
+    })
+    .resolve();
+  return router;
+}

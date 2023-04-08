@@ -1,26 +1,27 @@
 import { swiperFunc } from '@/layout';
 import El from '@/library/El';
+import { routerFunc } from '@/router';
 
 export function descpages() {
   return El({
     element: 'div',
     id: 'descpages',
-    className: 'bg-red-200 h-full w-full transition duration-500 ease-in-out transform  ',
+    className: 'h-full w-full bg-white transition duration-500 ease-in-out transform  ',
     child: [
       El({
         element: 'div',
-        className: 'swiper  w-full',
+        className: 'swiper ',
         child: swiperFunc(),
       }),
       El({
         element: 'div',
-        className: ' w-full text-xl text-center p-2',
+        className: ' w-full text-xl text-black text-center p-2',
         dataset: { change: 'description' },
         child: 'We provide high quality products just for you',
       }),
       El({
         element: 'div',
-        className: 'swiper-pagination bg-red-300 absolute',
+        className: 'swiper-pagination absolute',
       }),
       El({
         element: 'div',
@@ -49,13 +50,25 @@ export function descpages() {
               description.innerHTML =
                 'Let’s fulfill your fashion needs with shoearight now!';
               button.innerHTML = 'Get Started';
+              
             }
             swiper.slideNext();
           },
+          eventListener: [
+            {
+              event: 'click',
+              callback: changeRoute,
+            },
+          ],
         }),
       }),
     ],
   });
 }
 
-// swiper.activeIndex
+function changeRoute(e) {
+  const swiper = document.querySelector('.swiper').swiper;
+  if (swiper.activeIndex === 2) {
+    routerFunc().navigate("/auth")
+  }
+}

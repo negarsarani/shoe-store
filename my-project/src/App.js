@@ -10,6 +10,7 @@ function App() {
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
+    id:"routes",
     child: onboarding()
   });
 }

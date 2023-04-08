@@ -8,6 +8,8 @@ import { settingSwipper } from './src/layout';
 
 const main = document.getElementById('app');
 main.appendChild(App());
+settingSwipper();
+
 
 // if (Cookies.get('user')) {
 //     openLoading()
