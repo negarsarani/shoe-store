@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name":"negar sarani",
+      "email": "negar.sarani2002@gmail.com",
+      "password": "123"
+    },
+    {
+      "name":"niloofar sarani",
+      "email": "nilo.sarani2002@gmail.com",
+      "password": "102030Nillo"
+    }
+  ]
+}

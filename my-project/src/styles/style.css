@@ -22,3 +22,13 @@ html,
 input[type='checkbox'] {
   accent-color: black;
 }
+
+/* Target the SVG element with the ID */
+#my-svg {
+  fill: #6c757d; /* Set the default fill color */
+}
+
+/* Change the fill color on hover */
+#my-svg:hover {
+  fill: black;
+}
