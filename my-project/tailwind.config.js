@@ -12,7 +12,8 @@ export default {
       },
       colors:{
         'shoea':"#152536",
-        'btn-black':"#212529"
+        'btn-black':"#212529",
+        'white-gray':"#FAFAFA"
       },
     },
   },

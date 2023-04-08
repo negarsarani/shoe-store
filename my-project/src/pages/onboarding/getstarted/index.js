@@ -1,15 +1,18 @@
 import El from '@/library/El';
 import { descpages } from './descpages';
+import { settingSwipper } from '@/layout';
 
 export function getStarted() {
   setTimeout(() => {
     const getStarted = document.getElementById('getStarted');
 
-    getStarted.classList.remove('bg-Wallpaper-page2', 'translate-x-full');
+    // getStarted.classList.remove('bg-Wallpaper-page2', 'translate-x-full');
 
-    getStarted.classList.add('-translate-x-full');
+    // getStarted.classList.add('-translate-x-full');
     getStarted.innerHTML = '';
     getStarted.append(descpages());
+    settingSwipper();
+
   }, 2000);
   return El({
     element: 'div',

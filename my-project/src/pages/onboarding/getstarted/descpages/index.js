@@ -5,7 +5,7 @@ export function descpages() {
   return El({
     element: 'div',
     id: 'descpages',
-    className: 'bg-red-200 h-full w-full transition duration-500 ease-in-out transform translate-x-full ',
+    className: 'bg-red-200 h-full w-full transition duration-500 ease-in-out transform  ',
     child: [
       El({
         element: 'div',

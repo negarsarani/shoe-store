@@ -11,11 +11,14 @@ html,
   font-family: 'Inter';
   src: url(/my-project/public/assets/Fonts/inter/Inter-Regular.ttf);
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: black;
   width: 25px;
   height: 1px;
 }
-.swiper-pagination{
-  position: absolute;
+.swiper-pagination {
+  position: relative;
+}
+input[type='checkbox'] {
+  accent-color: black;
 }
