@@ -65,8 +65,9 @@ export function LoginForm() {
       child: [
         El({
           element: 'input',
+          id:"remember",
           className:
-            'form-checkbox text-black bg-black border-2 w-3 h-3 rounded-md',
+            'form-checkbox remember text-black bg-black border-2 w-3 h-3 rounded-md',
           type: 'checkbox',
         }),
         El({

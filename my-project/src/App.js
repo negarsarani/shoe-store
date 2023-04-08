@@ -10,7 +10,7 @@ function App() {
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
-    child: login()
+    child: onboarding()
   });
 }
 export default App;
