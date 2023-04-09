@@ -25,7 +25,7 @@ export function renderHeaderProfile(item, elem) {
     child: [
       El({
         element: 'div',
-        className: 'flex justify-between p-2 px-4',
+        className: 'flex justify-between py-2 ',
         child: [
           El({
             element: 'div',
