@@ -1,14 +1,16 @@
 {
   "users": [
     {
-      "name":"negar sarani",
+      "name": "negar sarani",
       "email": "negar.sarani2002@gmail.com",
-      "password": "123"
+      "password": "123",
+      "image": "assets/profiles/p-1.jpg"
     },
     {
-      "name":"niloofar sarani",
+      "name": "niloofar sarani",
       "email": "nilo.sarani2002@gmail.com",
-      "password": "102030Nillo"
+      "password": "102030Nillo",
+      "image": "assets/profiles/p-1.jpg"
     }
   ]
 }

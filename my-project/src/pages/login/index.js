@@ -13,6 +13,9 @@ export function login(params) {
         child: El({
           element: 'img',
           className: 'cursor-pointer',
+          onclick: function name() {
+            console.log("s");
+          },
           src: 'assets/svg/arrow.svg',
         }),
       }),
@@ -44,9 +47,9 @@ export function login(params) {
               }),
               El({
                 element: 'form',
-                id:"loginform",
+                id: 'loginform',
                 className: ' flex flex-col gap-3 px-5',
-                child:LoginForm()
+                child: LoginForm(),
               }),
             ],
           }),
