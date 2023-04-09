@@ -1,3 +1,4 @@
+import { headerProfile } from '@/layout/headerprofile';
 import El from '@/library/El';
 
 export function home(params) {
@@ -5,76 +6,11 @@ export function home(params) {
     element: 'div',
     child: El({
       element: 'div',
-      className: '',
+      className: 'flex justify-between ',
       child: [
         //header
-        El({
-          element: 'header',
-          className: 'header',
-          child: [
-            El({
-              element: 'div',
-              className: '',
-              child: [
-                El({
-                  element: 'div',
-                  className: '',
-                  child: El({
-                    element: 'img',
-                    className: '',
-                    src: '',
-                  }),
-                }),
-                El({
-                  element: 'div',
-                  className: '',
-                  child: El({
-                    element: 'img',
-                    className: '',
-                    src: '',
-                  }),
-                }),
-              ],
-            }),
-            El({
-              element: 'div',
-              className: '',
-              child: [
-                El({
-                  element: 'div',
-                  element: 'div',
-                  className: 'profile',
-                  child: El({
-                    element: 'div',
-                    className: '',
-                    child: El({
-                      element: 'img',
-                      className: '',
-                      src: '',
-                    }),
-                  }),
-                }),
-                El({
-                  element: 'div',
-                  className: 'text',
-                  child: [
-                    El({
-                      element: 'span',
-                      className: '',
-                      child: '',
-                    }),
-                    El({
-                      element: 'span',
-                      className: 'name',
-                      child: '',
-                    }),
-                  ],
-                }),
-              ],
-            }),
-          ],
-        }),
+        headerProfile(),
       ],
-    }),
+    })
   });
 }
