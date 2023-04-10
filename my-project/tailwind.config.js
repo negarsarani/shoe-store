@@ -17,7 +17,9 @@ export default {
         'btn-black':"#212529",
         'white-gray':"#FAFAFA",
         'bg-gary':"#ECECEC",
-        'bg-dark':"#343A40"
+        'bg-dark':"#343A40",
+        'bg-card':"#F3F3F3"
+
       },
     },
   },

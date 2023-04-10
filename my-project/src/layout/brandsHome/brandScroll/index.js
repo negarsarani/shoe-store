@@ -11,7 +11,7 @@ export function brandScroll(elem, data) {
       element: 'div',
       className: 'flex p-3 gap-3 text-ms items-center w-full flex-shrink-0',
       id: 'divscroll',
-      child: [EachScrollEl('All')],
+      child: [EachScrollEl('All' , "bg-bg-dark , text-white")],
     }),
   });
   elem.append(el);

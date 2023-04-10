@@ -1,6 +1,7 @@
 import { barandsHome } from '@/layout/brandsHome';
 import { brandGrid } from '@/layout/brandsHome/brandGrid';
 import { headerProfile } from '@/layout/headerprofile';
+import { productHome } from '@/layout/productHome';
 import { searchHome } from '@/layout/search';
 import El from '@/library/El';
 
@@ -18,7 +19,7 @@ export function home(params) {
     child: El({
       element: 'div',
       className: 'flex flex-col  gap-3 justify-between ',
-      child: [headerProfile(), searchHome(), barandsHome(), ],
+      child: [headerProfile(), searchHome(), barandsHome(),productHome()]
     }),
   });
 }
