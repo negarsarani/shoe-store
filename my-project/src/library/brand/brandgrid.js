@@ -3,14 +3,14 @@ import El from '../El';
 export function EachGrideEL(item) {
   return El({
     Element: 'div',
-    className: 'flex flex-col',
+    className: 'flex flex-col gap-2 items-center justify-center ',
     child: [
       El({
         element: 'div',
-        className: '',
+        className: 'bg-bg-gary p-3 rounded-full w-12 h-12 flex items-center justify-center ',
         child: El({
           element: 'img',
-          className: '',
+          className: ' w-8 ',
           src: `${item.image}`,
         }),
       }),
@@ -19,7 +19,7 @@ export function EachGrideEL(item) {
         className: '',
         child: El({
           element: 'span',
-          className: '',
+          className: 'font-Inter_semibold font-bold text-sm',
           child: `${item.name}`,
         }),
       }),

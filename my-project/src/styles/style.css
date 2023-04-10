@@ -11,6 +11,14 @@ html,
   font-family: 'Inter';
   src: url(/my-project/public/assets/Fonts/inter/Inter-Regular.ttf);
 }
+@font-face {
+  font-family: 'Inter-semibold';
+  src: url(/my-project/public/assets/Fonts/inter/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url(/my-project/public/assets/Fonts/inter/Inter-Bold.ttf);
+}
 .swiper-pagination-bullet {
   background-color: black;
   width: 25px;

@@ -8,12 +8,15 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        Inter_r :["Inter"],
+        Inter_r : ["Inter"],
+        Inter_semibold :["Inter-semibold"],
+        Inter_Bold :["Inter-Bold"],
       },
       colors:{
         'shoea':"#152536",
         'btn-black':"#212529",
-        'white-gray':"#FAFAFA"
+        'white-gray':"#FAFAFA",
+        'bg-gary':"#ECECEC"
       },
     },
   },
