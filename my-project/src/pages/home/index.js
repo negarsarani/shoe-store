@@ -1,3 +1,4 @@
+import { barandsHome } from '@/layout/brandsHome';
 import { brandGrid } from '@/layout/brandsHome/brandGrid';
 import { headerProfile } from '@/layout/headerprofile';
 import { searchHome } from '@/layout/search';
@@ -17,11 +18,7 @@ export function home(params) {
     child: El({
       element: 'div',
       className: 'flex flex-col px-4 gap-3 justify-between ',
-      child: [
-        headerProfile(),
-        searchHome(),
-        brandGrid()
-      ],
+      child: [headerProfile(), searchHome(), barandsHome()],
     }),
   });
 }

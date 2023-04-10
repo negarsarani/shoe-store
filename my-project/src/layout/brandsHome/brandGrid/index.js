@@ -1,13 +1,17 @@
 import El from '@/library/El';
 import { EachGrideEL } from '@/library/brand/brandgrid';
 
-export function brandGrid() {
-  return El({
-    element: 'div',
-    className: ' flex gap-2 flex-wrap items-center justify-evenly gap-5  ',
-    child: [
-     
+export function brandGrid(elem, data) {
+  elem.innerHTML = '';
+  const dataSplice = data.splice(0, 7);
 
-    ],
+  const elitem = El({
+    element: 'div',
+    className: 'grid grid-cols-4 sm:flex lg:grid-cols-4 gap-4',
+    child: EachGrideEL({ name: 'More', image: 'assets/svg/more.svg' }),
   });
+  dataSplice.forEach((item) => {
+    elitem.insertAdjacentElement('afterbegin', EachGrideEL(item)); 
+  });
+  elem.append(elitem);
 }
