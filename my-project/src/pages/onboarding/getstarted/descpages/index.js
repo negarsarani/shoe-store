@@ -1,4 +1,4 @@
-import { swiperFunc } from '@/layout';
+import { settingSwipper, swiperFunc } from '@/layout';
 import El from '@/library/El';
 import { routerFunc } from '@/router';
 
@@ -21,7 +21,7 @@ export function descpages() {
       }),
       El({
         element: 'div',
-        className: 'swiper-pagination absolute',
+        className: 'swiper-pagination ',
       }),
       El({
         element: 'div',

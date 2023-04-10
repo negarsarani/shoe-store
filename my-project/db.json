@@ -12,5 +12,258 @@
       "password": "102030Nillo",
       "image": "assets/profiles/p-2.jpg"
     }
+  ],
+  "shoes": [
+    {
+      "id": 1,
+      "brand": "Puma",
+      "sizes": [38, 40, 42, 44],
+      "colors": ["black", "white", "red"],
+      "sold": "7.371 ",
+      "name": "Wild Rider Layers Unisex Sneakers",
+      "price": 121,
+      "image": [
+        "https://m.media-amazon.com/images/I/51ujld02srL._AC_SY575._SX._UX._SY._UY_.jpg",
+        "https://m.media-amazon.com/images/I/61fptY+b0CL._AC_SY575._SX._UX._SY._UY_.jpg",
+        "https://m.media-amazon.com/images/I/51+T-K9iRZL._AC_SY575._SX._UX._SY._UY_.jpg",
+        "https://m.media-amazon.com/images/I/610V5h1gKDL._AC_SY575._SX._UX._SY._UY_.jpg",
+        "https://m.media-amazon.com/images/I/51JhxcY1ZhL._AC_SY575._SX._UX._SY._UY_.jpg",
+        "https://m.media-amazon.com/images/I/51IUhjy16RL._AC_SY575._SX._UX._SY._UY_.jpg"
+      ],
+      "description": "With design elements inspired by the movement and motion of city life, the Wild Rider Layers Unisex Sneakers brings a fresh new dimension to the iconic Rider family. We've layered a rich mix of premium leather, suede and hairy suede onto a nylon upper to create texture and a raw edgy look that is pure street. The IMEVA midsole and rubber outsole ensure combined lightweight comfort and great traction to take you forward, further and faster through your day and beyond.",
+      "quantity": 5,
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 2,
+      "brand": "Puma",
+      "sizes": [38, 40, 42, 44],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "10.371 ",
+      "name": "Mercedes Kart Cat-X Tech Unisex Sneakers",
+      "price": 151,
+      "image": [
+        "https://m.media-amazon.com/images/I/710i9oACWOL._AC_UY575_.jpg",
+        "https://m.media-amazon.com/images/I/71f3brLmpzL._AC_UY500_.jpg",
+        "https://m.media-amazon.com/images/I/71GfsspfrEL._AC_UY500_.jpg",
+        "https://m.media-amazon.com/images/I/81FcbubHAkL._AC_UY500_.jpg",
+        "https://m.media-amazon.com/images/I/71xYaAo3HLL._AC_UY500_.jpg",
+        "https://m.media-amazon.com/images/I/81EAPL3nXGL._AC_UY500_.jpg",
+        "https://m.media-amazon.com/images/I/818vpvYi5cL._AC_UY500_.jpg"
+      ],
+      "description": "Premium material and tech features are given a branded boost from German engineering. The Mercedes Kart Cat-X Tech Unisex Sneakers areleant style and esteem by Mercedes-AMG Petronas Motorsport. The piece rises to the occasion with an all-leather upper.",
+      "quantity": 5,
+      "rating": {
+        "rate": 3.0,
+        "count": 259
+      }
+    },
+    {
+      "id": 3,
+      "brand": "Nike",
+      "sizes": [38, 40, 42, 44],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "1.371 ",
+      "name": "Nike Mens Air Force 1 Low Size",
+      "price": 161,
+      "image": [
+        "https://m.media-amazon.com/images/I/61Gc1rL2uIL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61KnEQg0xkL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/711R3iEMiWL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/717tYpArUqL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61z+e7sM7RL._UL1500_.jpg"
+      ],
+      "description": "In 2018, Nike started to release Skeleton-themed Air Force 1s in October in celebration of Halloween. Two years later, the Swoosh continued the tradition and released another Air Force 1 Skeleton, only this time with a colorful new look.",
+      "quantity": 30,
+      "rating": {
+        "rate": 4.1,
+        "count": 500
+      }
+    },
+    {
+      "id": 4,
+      "brand": "Adidas",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "5.471 ",
+      "name": "Adidas Womens Ozelle Running Shoe",
+      "price": 120,
+      "image": [
+        "https://m.media-amazon.com/images/I/61iRdVZAGHL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/618wO8LkqHL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51PCX-SE-oL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61H8RfEeo2L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51S7JCKQzpL._UL1500_.jpg"
+      ],
+      "description": "For A Forward-Thinking Look, Choose These Men'S Adidas Running-Inspired Shoes. They Have The Stability You Need With A Chunky Outsole And A Lightweight Cloudfoam Midsole. The Synthetic Upper Has Contrasting 3-Stripes For A Unique Look. Made With A Series Of Recycled Materials, This Upper Features At Least 50% Recycled Content. This Product Represents Just One Of Our Solutions To Help End Plastic Waste.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.0,
+        "count": 300
+      }
+    },
+    {
+      "id": 5,
+      "brand": "Reebok",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "5.471 ",
+      "name": "Reebok Womens Stride Walker W Walking Shoe",
+      "price": 180,
+      "image": [
+        "assets/img/shoes/reebok/reebok5.jpg",
+        "https://m.media-amazon.com/images/I/81kb5-6HVxL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81ETVIfWDHL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71easssi3rL._UL1500_.jpg"
+      ],
+      "description": "An upgraded version of Stride Runner designed specially for Walking category. Extremely light weight product with Astrofoam Technolgy Outsole which gives extreme comfort at this price point.",
+      "quantity": 20,
+      "rating": {
+        "rate": 5.0,
+        "count": 400
+      }
+    },
+    {
+      "id": 6,
+      "brand": "Asics",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "3.471 ",
+      "name": "ASICS Unisex-Adult Gel-1130 Track and Field Shoe",
+      "price": 250,
+      "image": [
+        "assets/img/shoes/ascis/asics6.jpg",
+        "https://m.media-amazon.com/images/I/81kb5-6HVxL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81ETVIfWDHL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71easssi3rL._UL1500_.jpg"
+      ],
+      "description": "Spanning across decades of design evolution, the GEL-1130 sneaker pays homage to the ninth iteration of the GEL-1000 series. The stability running shoe from 2008 keeps you feeling supported wherever your mind takes you. The essence of this shoe’s construction is rooted in the composition of the GEL-KAYANO 14 sneaker. Its traditional materials have been repurposed with suede paneling to evolve the retro runner with a more modern look. Additionally, this retro runner’s comfort is remixed for the streets, featuring GEL technology in the heel for lasting comfort.",
+      "quantity": 20,
+      "rating": {
+        "rate": 4.5,
+        "count": 400
+      }
+    },
+    {
+      "id": 7,
+      "brand": "Converse",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "4.471 ",
+      "name": "Converse Men's Run Star Hike High Top Sneakers",
+      "price": 250,
+      "image": [
+        "assets/img/shoes/ascis/asics6.jpg",
+        "https://m.media-amazon.com/images/I/61eHVcTuo-L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61yirCPNk4L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61-Y8kTPw1L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61HxVDV6IVL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61-Y8kTPw1L._UL1500_.jpg"
+      ],
+      "description": "The Run Star Hike features an oversized, raised rubber sole and an eye-catching star heel counter. It also has an Ortholite insole for extra comfort. The Converse Run Star Hike is available in classic black and white, with outsoles in other hues. It is now available in low and high styles.",
+      "quantity": 20,
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "id": 8,
+      "brand": "New balance",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "new balance Women's 850 Pink/White Running Shoe",
+      "price": 150,
+      "image": [
+        "assets/img/shoes/new-balance/new-balance8.jpg",
+        "https://m.media-amazon.com/images/I/81YChDDog3L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81VJ3+5OE0L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81e10B12gfL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81iUbg5GrKL._UL1500_.jpg"
+      ],
+      "description": "Experience the comfort and support of the original New Balance women's 850 lifestyle running shoe. First introduced in 1996, this women's sneaker offers a sleek silhouette and progressive elements. Webbing lace detail and a stylish mix of synthetic and mesh adorn the upper. ABZORB technology in the sole offers comfortable cushioning, while a Rollbar medial post helps with overpronation.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.3,
+        "count": 200
+      }
+    },
+    {
+      "id": 9,
+      "brand": "Vans",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "Vans Men's Mn Skate Slip-on Sneaker",
+      "price": 100,
+      "image": [
+        "assets/img/shoes/vans/vans9.jpg",
+        "https://m.media-amazon.com/images/I/810EjQR+1oL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81SgDGc8ATL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71L7vfODQKL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71oU2dfXnHL._UL1500_.jpg"
+      ],
+      "description": "Vans Men (Krooked by Natas for Ray) black Canvas Casual Sneakers",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.0,
+        "count": 200
+      }
+    },
+    {
+      "id": 10,
+      "brand": "Vans",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "Nike Women's Air Max 270 React",
+      "price": 500,
+      "image": [
+        "assets/img/shoes/nike/nike10.jpg",
+        "https://m.media-amazon.com/images/I/41Zojz7-mkL.jpg",
+        "https://m.media-amazon.com/images/I/71JjWGosqJL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/718tbsOO8LL._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71M2ARXHO6L._UL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61iRxPpq1PL._UL1500_.jpg"
+      ],
+      "description": "The Nike Air Max 270 React combines some of Nike's latest cushioning innovations to create an ultra comfortable and supportive sneaker. They're constructed with a multi-layered no-sew textile upper, feature React cushioning, a 270 Max Air heel unit, rope laces, heel pull tab, and a rubber outsole.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.9,
+        "count": 200
+      }
+    }
+  ],
+
+  "brands": [
+    "Nike",
+    "Adidas",
+    "Puma",
+    "Reebok",
+    "Converse",
+    "Vans",
+    "New Balance",
+    "Skechers",
+    "Fila",
+    "ASICS",
+    "Under Armour",
+    "Crocs",
+    "Timberland",
+    "Dr. Martens",
+    "Clarks",
+    "Brooks",
+    "Hoka One One",
+    "Merrell",
+    "Salomon",
+    "Teva",
+    "Birkenstock",
+    "Gucci",
+    "Balenciaga",
+    "Prada",
+    "Chanel"
   ]
 }
