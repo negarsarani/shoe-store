@@ -1,3 +1,4 @@
+import { brandGrid } from '@/layout/brandsHome/brandGrid';
 import { headerProfile } from '@/layout/headerprofile';
 import { searchHome } from '@/layout/search';
 import El from '@/library/El';
@@ -19,6 +20,7 @@ export function home(params) {
       child: [
         headerProfile(),
         searchHome(),
+        brandGrid()
       ],
     }),
   });
