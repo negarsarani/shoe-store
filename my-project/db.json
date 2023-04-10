@@ -240,16 +240,41 @@
   ],
 
   "brands": [
-    "Nike",
-    "Adidas",
-    "Puma",
-    "Reebok",
-    "Converse",
+    {
+      "name": "Nike",
+      "image": "https://www.svgrepo.com/show/303214/nike-4-logo.svg"
+    },
+    {
+      "name": "Adidas",
+      "image": "https://www.svgrepo.com/show/333479/adidas.svg"
+    },
+
+    {
+      "name": "Puma",
+      "image": "https://companieslogo.com/img/orig/PUM.DE-73e7228d.png?t=1649479959"
+    },
+
+    {
+      "name": "Asics",
+      "image": "assets/svg/brand/Asics.svg"
+    },
+
+    {
+      "name": "Reebok",
+      "image": "https://ww1.freelogovectors.net/wp-content/uploads/2023/02/reeboklogo_freelogovectors.net_.png?lossy=1&w=2560&ssl=1"
+    },
+    {
+      "name": "New Balance",
+      "image": "https://static.wikia.nocookie.net/logopedia/images/1/14/New_Balance_symbol.svg/revision/latest/scale-to-width-down/1200?cb=20220818122404"
+    },
+    {
+      "name": "Converse",
+      "image": "https://1000logos.net/wp-content/uploads/2021/04/Converse-logo.png"
+    },
+
     "Vans",
-    "New Balance",
     "Skechers",
     "Fila",
-    "ASICS",
     "Under Armour",
     "Crocs",
     "Timberland",
@@ -267,3 +292,4 @@
     "Chanel"
   ]
 }
+   
