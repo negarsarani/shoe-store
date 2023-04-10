@@ -21,7 +21,7 @@ export function renderHeaderProfile(item, elem) {
   elem.innerHTML = '';
   const el = El({
     element: 'header',
-    className: 'header w-full',
+    className: 'header w-full px-4',
     child: [
       El({
         element: 'div',

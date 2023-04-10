@@ -3,7 +3,7 @@ import { EachGrideEL } from '@/library/brand/brandgrid';
 
 export function brandGrid(elem, data) {
   elem.innerHTML = '';
-  const dataSplice = data.splice(0, 7);
+  const dataSplice = [...data].splice(0, 7);
 
   const elitem = El({
     element: 'div',
@@ -13,5 +13,5 @@ export function brandGrid(elem, data) {
   dataSplice.forEach((item) => {
     elitem.insertAdjacentElement('afterbegin', EachGrideEL(item)); 
   });
-  elem.append(elitem);
+return elem.append(elitem);
 }

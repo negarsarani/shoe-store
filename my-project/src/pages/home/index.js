@@ -17,8 +17,8 @@ export function home(params) {
     },
     child: El({
       element: 'div',
-      className: 'flex flex-col px-4 gap-3 justify-between ',
-      child: [headerProfile(), searchHome(), barandsHome()],
+      className: 'flex flex-col  gap-3 justify-between ',
+      child: [headerProfile(), searchHome(), barandsHome(), ],
     }),
   });
 }
