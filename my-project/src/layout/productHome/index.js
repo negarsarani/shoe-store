@@ -5,7 +5,7 @@ let page;
 export function productHome() {
   const elem = El({
     element: 'div',
-    className: 'w-full ',
+    className: 'w-full pb-10',
     id: 'cardHome',
   });
 
@@ -26,7 +26,7 @@ export const observer = new IntersectionObserver((entries) => {
         const data = res.data;
         parentCardsHome(cardHome, data);
         if (data.length <= 0) {
-            document.getElementById('footer').innerHTML="";
+            document.getElementById('cardSkleton').innerHTML="";
         }
       });
     }

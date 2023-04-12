@@ -1,5 +1,6 @@
 import { barandsHome } from '@/layout/brandsHome';
 import { brandGrid } from '@/layout/brandsHome/brandGrid';
+import { footerMenue } from '@/layout/footer';
 import { headerProfile } from '@/layout/headerprofile';
 import { productHome } from '@/layout/productHome';
 import { searchHome } from '@/layout/search';
@@ -27,7 +28,7 @@ export function home(params) {
         productHome(),
         El({
           element: 'div',
-          id: 'footer',
+          id: 'cardSkleton',
           className: 'grid grid-cols-2',
           child: [
             SkeletonCard(),
@@ -35,6 +36,11 @@ export function home(params) {
             SkeletonCard(),
             SkeletonCard(),
           ],
+        }),
+        El({
+          element: 'div',
+          className: '',
+          child: footerMenue(),
         }),
       ],
     }),
