@@ -4,6 +4,7 @@ import { headerProfile } from '@/layout/headerprofile';
 import { productHome } from '@/layout/productHome';
 import { searchHome } from '@/layout/search';
 import El from '@/library/El';
+import { SkeletonCard } from '@/library/skeleton/Skeleton';
 
 export function home(params) {
   return El({
@@ -19,11 +20,23 @@ export function home(params) {
     child: El({
       element: 'div',
       className: 'flex flex-col  gap-3 justify-between ',
-      child: [headerProfile(), searchHome(), barandsHome(),productHome(), El({
-        element:"p",
-        child:"p",
-        id:"footer"
-      })]
+      child: [
+        headerProfile(),
+        searchHome(),
+        barandsHome(),
+        productHome(),
+        El({
+          element: 'div',
+          id: 'footer',
+          className: 'grid grid-cols-2',
+          child: [
+            SkeletonCard(),
+            SkeletonCard(),
+            SkeletonCard(),
+            SkeletonCard(),
+          ],
+        }),
+      ],
     }),
   });
 }

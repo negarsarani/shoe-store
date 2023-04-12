@@ -1,7 +1,6 @@
 import El from '@/library/El';
 import { parentCardsHome } from './cards';
 import { GetData } from '@/library/Api/GetData';
-// import { Observer } from '@/library/observer/Observer';
 let page;
 export function productHome() {
   const elem = El({
@@ -26,8 +25,8 @@ export const observer = new IntersectionObserver((entries) => {
       GetData(`product?_page=${++page}&_limit=4`).then((res) => {
         const data = res.data;
         parentCardsHome(cardHome, data);
-        if (data.lenght <= 0) {
-          document.getElementById('footer').remove();
+        if (data.length <= 0) {
+            document.getElementById('footer').innerHTML="";
         }
       });
     }
