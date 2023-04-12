@@ -8,3 +8,4 @@ import axios from 'axios';
 const main = document.getElementById('app');main.appendChild(App());
 // settingSwipper()
 
+

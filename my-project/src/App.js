@@ -7,7 +7,7 @@ import { descpages } from './pages/onboarding/getstarted/descpages';
 import { login } from './pages/login';
 import { home } from './pages/home';
 import { Loading } from './library/loading';
-
+import { Observer } from './library/observer/Observer';
 function App() {
   return El({
     element: 'div',
@@ -16,4 +16,5 @@ function App() {
     child: home(),
   });
 }
+Observer()
 export default App;

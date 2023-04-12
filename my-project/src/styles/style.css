@@ -47,3 +47,6 @@ input[type='checkbox'] {
 #my-svg:hover {
   fill: black;
 }
+.card.end-of-card {
+  border-bottom: 2px solid red;
+}

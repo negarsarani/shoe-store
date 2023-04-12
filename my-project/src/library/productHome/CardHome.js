@@ -1,32 +1,35 @@
 import El from '../El';
 
-export function cardHome() {
+export function EachcardHome(item) {
   return El({
     element: 'div',
-    className: 'felx flex-col items-center justify-center',
+    className:
+      'flex flex-col items-center justify-center p-2  overflow-hidden text-ellipsis truncate ',
     child: [
       El({
         element: 'div',
-        className: 'card bg-bg-card ',
+        className:
+          'card bg-bg-card w-full flex items-center justify-center cursor-pointer  rounded-3xl ',
         child: El({
           element: 'img',
-          className: '',
-          src: 'https://img01.ztat.net/article/spp-media-p1/2a8e292b23d64352a1b6d1d7e254fbd9/f57b3ce758e74b8bbfbeda3daf78a4c0.jpg?imwidth=1800&filter=packshot',
+          className: 'aspect-[3/4] rounded-3xl',
+          src: `${item.image[0]}`,
         }),
       }),
       El({
         element: 'div',
-        className: 'card',
+        className: 'card w-full text-ellipsis truncate  overflow-ellipsis ',
         child: [
           El({
             element: 'span',
-            className: '',
-            child: 'Nike new lkwlwjHDIEHA',
+            className:
+              ' text-ellipsis truncate  overflow-ellipsis font-semibold',
+            child: `${item.name}`,
           }),
           El({
             element: 'div',
-            className: '',
-            child: `$ 100.42`,
+            className: 'font-semibold',
+            child: `$ ${item.price}`,
           }),
         ],
       }),

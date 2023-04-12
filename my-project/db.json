@@ -13,277 +13,396 @@
       "image": "assets/profiles/p-2.jpg"
     }
   ],
-  "shoes": [
+
+  "product": [
     {
-      "product": [
-        {
-          "id": 1,
-          "brand": "Puma",
-          "sizes": [38, 40, 42, 44],
-          "colors": ["black", "white", "red"],
-          "sold": "7.371 ",
-          "name": "Puma PWRFrame TR 2 Elektro Summer Training Shoes Womens",
-          "price": 121,
-          "image": [
-            "",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/377944/03/sv01/fnd/EEA/fmt/png/PWRFrame-TR-2-Elektro-Summer-Training-Shoes-Women",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/377944/03/fnd/EEA/fmt/png/PWRFrame-TR-2-Elektro-Summer-Training-Shoes-Women",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/377944/03/bv/fnd/EEA/fmt/png/PWRFrame-TR-2-Elektro-Summer-Training-Shoes-Women",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/377944/03/sv04/fnd/EEA/fmt/png/PWRFrame-TR-2-Elektro-Summer-Training-Shoes-Women"
-          ],
-          "description": "Set the foundation for a great workout with the PWRFRAME TR 2. It has a new, improved upper over v1 and PWRFRAME technology in the forefoot that provides support and stability through explosive movement.",
-          "quantity": 5,
-          "rating": {
-            "rate": 3.9,
-            "count": 120
-          }
-        },
-        {
-          "id": 2,
-          "brand": "Puma",
-          "sizes": [38, 40, 42, 44],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "10.371 ",
-          "name": "Puma Rider FV Sneakers",
-          "price": 151,
-          "image": [
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1200,h_1200/global/387672/20/sv01/fnd/EEA/fmt/png/Rider-FV-Sneakers",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/387672/20/fnd/EEA/fmt/png/Rider-FV-Sneakers",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/387672/20/bv/fnd/EEA/fmt/png/Rider-FV-Sneakers",
-            "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/387672/20/sv04/fnd/EEA/fmt/png/Rider-FV-Sneakers"
-          ],
-          "description": "One foot in the past, one foot in the future: the Rider FV sneakers combine a throwback upper with fresh new details. Take your next step in the ultimate in old-school style.",
-          "quantity": 5,
-          "rating": {
-            "rate": 3.0,
-            "count": 259
-          }
-        },
-        {
-          "id": 3,
-          "brand": "Nike",
-          "sizes": [38, 40, 42, 44],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "1.371 ",
-          "name": "Nike Air Max 90 Futura",
-          "price": 161,
-          "image": [
-            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-womens-shoes-kvRZ4h.png",
-            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2761d8f4-3210-451e-b4b9-128a713b2f3e/air-max-90-futura-womens-shoes-kvRZ4h.png",
-            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2761d8f4-3210-451e-b4b9-128a713b2f3e/air-max-90-futura-womens-shoes-kvRZ4h.png",
-            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3bf24eb0-334d-4985-be28-197de50761e5/air-max-90-futura-womens-shoes-kvRZ4h.png"
-          ],
-          "description": "We've reimagined an icon of Air with bursts of high-energy colors and layered leather overlays to bring you skillfully crafted luxury. Plus, plush ankle padding mixes with tried-and-true Air cushioning for comfort you have to feel to believe. With a design that's playful, sporty and oh-so comfortable, the Nike Air Max 90 Futura is all about stepping into the future.",
-          "quantity": 30,
-          "rating": {
-            "rate": 4.1,
-            "count": 500
-          }
-        },
-        {
-          "id": 4,
-          "brand": "Adidas",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "5.471 ",
-          "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
-          "price": 120,
-          "image": [
-            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/aeeb6fc5b8f54ff5b1d7aed80130cce2_9366/TERREX_FREE_HIKER_2_BCA_WANDERSCHUH_Lila_GZ0688_06_standard.jpg",
-            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5969b6264e534b93a205aed90071174d_9366/TERREX_FREE_HIKER_2_BCA_HIKING_SHOES_Purple_GZ0688_09_standard.jpg",
-            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5b9b4de7f5ae4e2cb899aed80130f919_9366/TERREX_FREE_HIKER_2_BCA_HIKING_SHOES_Purple_GZ0688_41_detail.jpg",
-            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/14977915cbea43a982b7aed801310153_9366/TERREX_FREE_HIKER_2_BCA_HIKING_SHOES_Purple_GZ0688_42_detail.jpg",
-          ],
-          "description": "For A Forward-Thinking Look, Choose These Men'S Adidas Running-Inspired Shoes. They Have The Stability You Need With A Chunky Outsole And A Lightweight Cloudfoam Midsole. The Synthetic Upper Has Contrasting 3-Stripes For A Unique Look. Made With A Series Of Recycled Materials, This Upper Features At Least 50% Recycled Content. This Product Represents Just One Of Our Solutions To Help End Plastic Waste.",
-          "quantity": 10,
-          "rating": {
-            "rate": 4.0,
-            "count": 300
-          }
-        },
-        {
-          "id": 5,
-          "brand": "Reebok",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "5.471 ",
-          "name": "REEBOK X LOONEY TUNES CLUB C 85 UNISEX - Trainers",
-          "price": 180,
-          "image": [
-            "https://img01.ztat.net/article/spp-media-p1/2a8e292b23d64352a1b6d1d7e254fbd9/f57b3ce758e74b8bbfbeda3daf78a4c0.jpg?imwidth=1800&filter=packshot",
-            "https://img01.ztat.net/article/spp-media-p1/9e5b226cadd94f8a800f11a9ff6f1ee7/7a1c864a1e2d4c7d80f9b943313c0e0d.jpg?imwidth=1800",
-            "https://img01.ztat.net/article/spp-media-p1/9fbdf79ad8ac4c4295af5451a2ce40aa/2af65b8090754704b9c2c3d59244c2b0.jpg?imwidth=1800"
-          ],
-          "description": "An upgraded version of Stride Runner designed specially for Walking category. Extremely light weight product with Astrofoam Technolgy Outsole which gives extreme comfort at this price point.",
-          "quantity": 20,
-          "rating": {
-            "rate": 5.0,
-            "count": 400
-          }
-        },
-        {
-          "id": 6,
-          "brand": "Asics",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "3.471 ",
-          "name": "ASICS Unisex-Adult Gel-1130 Track and Field Shoe",
-          "price": 250,
-          "image": [
-            "assets/img/shoes/ascis/asics6.jpg",
-            "https://m.media-amazon.com/images/I/81kb5-6HVxL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/81ETVIfWDHL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/71easssi3rL._UL1500_.jpg"
-          ],
-          "description": "Spanning across decades of design evolution, the GEL-1130 sneaker pays homage to the ninth iteration of the GEL-1000 series. The stability running shoe from 2008 keeps you feeling supported wherever your mind takes you. The essence of this shoe’s construction is rooted in the composition of the GEL-KAYANO 14 sneaker. Its traditional materials have been repurposed with suede paneling to evolve the retro runner with a more modern look. Additionally, this retro runner’s comfort is remixed for the streets, featuring GEL technology in the heel for lasting comfort.",
-          "quantity": 20,
-          "rating": {
-            "rate": 4.5,
-            "count": 400
-          }
-        },
-        {
-          "id": 7,
-          "brand": "Converse",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "4.471 ",
-          "name": "Converse Men's Run Star Hike High Top Sneakers",
-          "price": 250,
-          "image": [
-            "assets/img/shoes/ascis/asics6.jpg",
-            "https://m.media-amazon.com/images/I/61eHVcTuo-L._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/61yirCPNk4L._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/61-Y8kTPw1L._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/61HxVDV6IVL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/61-Y8kTPw1L._UL1500_.jpg"
-          ],
-          "description": "The Run Star Hike features an oversized, raised rubber sole and an eye-catching star heel counter. It also has an Ortholite insole for extra comfort. The Converse Run Star Hike is available in classic black and white, with outsoles in other hues. It is now available in low and high styles.",
-          "quantity": 20,
-          "rating": {
-            "rate": 4.5,
-            "count": 100
-          }
-        },
-        {
-          "id": 8,
-          "brand": "New balance",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "471 ",
-          "name": "new balance Women's 850 Pink/White Running Shoe",
-          "price": 150,
-          "image": [
-            "assets/img/shoes/new-balance/new-balance8.jpg",
-            "https://m.media-amazon.com/images/I/81YChDDog3L._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/81VJ3+5OE0L._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/81e10B12gfL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/81iUbg5GrKL._UL1500_.jpg"
-          ],
-          "description": "Experience the comfort and support of the original New Balance women's 850 lifestyle running shoe. First introduced in 1996, this women's sneaker offers a sleek silhouette and progressive elements. Webbing lace detail and a stylish mix of synthetic and mesh adorn the upper. ABZORB technology in the sole offers comfortable cushioning, while a Rollbar medial post helps with overpronation.",
-          "quantity": 10,
-          "rating": {
-            "rate": 4.3,
-            "count": 200
-          }
-        },
-        {
-          "id": 9,
-          "brand": "Vans",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "471 ",
-          "name": "Vans Men's Mn Skate Slip-on Sneaker",
-          "price": 100,
-          "image": [
-            "assets/img/shoes/vans/vans9.jpg",
-            "https://m.media-amazon.com/images/I/810EjQR+1oL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/81SgDGc8ATL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/71L7vfODQKL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/71oU2dfXnHL._UL1500_.jpg"
-          ],
-          "description": "Vans Men (Krooked by Natas for Ray) black Canvas Casual Sneakers",
-          "quantity": 10,
-          "rating": {
-            "rate": 4.0,
-            "count": 200
-          }
-        },
-        {
-          "id": 10,
-          "brand": "Vans",
-          "sizes": [32, 36, 40],
-          "colors": ["blue", "yellow", "purple"],
-          "sold": "471 ",
-          "name": "Nike Women's Air Max 270 React",
-          "price": 500,
-          "image": [
-            "assets/img/shoes/nike/nike10.jpg",
-            "https://m.media-amazon.com/images/I/41Zojz7-mkL.jpg",
-            "https://m.media-amazon.com/images/I/71JjWGosqJL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/718tbsOO8LL._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/71M2ARXHO6L._UL1500_.jpg",
-            "https://m.media-amazon.com/images/I/61iRxPpq1PL._UL1500_.jpg"
-          ],
-          "description": "The Nike Air Max 270 React combines some of Nike's latest cushioning innovations to create an ultra comfortable and supportive sneaker. They're constructed with a multi-layered no-sew textile upper, feature React cushioning, a 270 Max Air heel unit, rope laces, heel pull tab, and a rubber outsole.",
-          "quantity": 10,
-          "rating": {
-            "rate": 4.9,
-            "count": 200
-          }
-        }
-      ]
+      "id": 1,
+      "brand": "Nike",
+      "sizes": [38, 40, 42, 44],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "1.371 ",
+      "name": "Nike Air Max 90 Futura",
+      "price": 161,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/1ab00f95651f4fcdb0baabe3efe6d632/4fe2f141a7be4dc3960de2f75c3ba996.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/58e8a74355984cf78993c7473c3a2539/8b20812b3bed447a9e263fb19ce1d404.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/a5d34a5beb61424b8ae16aaa1b2b2235/2178a93a4408426e9dec82ebf0987c5c.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/18d5262e66cc4a0e9c1de89a965ab76c/ca80f67a7e59472ba5302452d3bbb9da.jpg?imwidth=1800"
+      ],
+      "description": "We've reimagined an icon of Air with bursts of high-energy colors and layered leather overlays to bring you skillfully crafted luxury. Plus, plush ankle padding mixes with tried-and-true Air cushioning for comfort you have to feel to believe. With a design that's playful, sporty and oh-so comfortable, the Nike Air Max 90 Futura is all about stepping into the future.",
+      "quantity": 30,
+      "rating": {
+        "rate": 4.1,
+        "count": 500
+      }
     },
     {
-      "brands": [
-        {
-          "name": "Nike",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png?20220908234918"
-        },
-        {
-          "name": "Adidas",
-          "image": "https://www.svgrepo.com/show/333479/adidas.svg"
-        },
-        {
-          "name": "Puma",
-          "image": "https://companieslogo.com/img/orig/PUM.DE-73e7228d.png?t=1649479959"
-        },
-        {
-          "name": "Asics",
-          "image": "assets/svg/brand/Asics.svg"
-        },
-        {
-          "name": "Reebok",
-          "image": "https://ww1.freelogovectors.net/wp-content/uploads/2023/02/reeboklogo_freelogovectors.net_.png?lossy=1&w=2560&ssl=1"
-        },
-        {
-          "name": "New Balance",
-          "image": "https://logos-world.net/wp-content/uploads/2020/09/New-Balance-Emblem.png"
-        },
-        {
-          "name": "Converse",
-          "image": "https://1000logos.net/wp-content/uploads/2021/04/Converse-logo.png"
-        },
-
-        "Vans",
-        "Skechers",
-        "Fila",
-        "Under Armour",
-        "Crocs",
-        "Timberland",
-        "Dr. Martens",
-        "Clarks",
-        "Brooks",
-        "Hoka One One",
-        "Merrell",
-        "Salomon",
-        "Teva",
-        "Birkenstock",
-        "Gucci",
-        "Balenciaga",
-        "Prada",
-        "Chanel"
-      ]
+      "id": 2,
+      "brand": "Adidas",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "5.471 ",
+      "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
+      "price": 120,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/1bb35785bad34016952cdb808840b8a6/3b9b4fabad8648cb8ce8606bb15d46f4.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/44e9b956a79040489c35ba9faa6f1634/3761d475c36c48328aed733c27072ff2.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/c4df9f0041574d1c862df4346c967e68/cc0ff0abc167414d8b8d8a89cfce547c.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/7282f241fec04d7c98dd303c95a70804/702a2a09eb5947f2850269c395f4e9a8.jpg?imwidth=1800"
+      ],
+      "description": "For A Forward-Thinking Look, Choose These Men'S Adidas Running-Inspired Shoes. They Have The Stability You Need With A Chunky Outsole And A Lightweight Cloudfoam Midsole. The Synthetic Upper Has Contrasting 3-Stripes For A Unique Look. Made With A Series Of Recycled Materials, This Upper Features At Least 50% Recycled Content. This Product Represents Just One Of Our Solutions To Help End Plastic Waste.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.0,
+        "count": 300
+      }
+    },
+    {
+      "id": 3,
+      "brand": "Reebok",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "5.471 ",
+      "name": "Reebok X LOONEY TUNES CLUB C 85 UNISEX - Trainers",
+      "price": 180,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/2a8e292b23d64352a1b6d1d7e254fbd9/f57b3ce758e74b8bbfbeda3daf78a4c0.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/9e5b226cadd94f8a800f11a9ff6f1ee7/7a1c864a1e2d4c7d80f9b943313c0e0d.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/9fbdf79ad8ac4c4295af5451a2ce40aa/2af65b8090754704b9c2c3d59244c2b0.jpg?imwidth=1800"
+      ],
+      "description": "An upgraded version of Stride Runner designed specially for Walking category. Extremely light weight product with Astrofoam Technolgy Outsole which gives extreme comfort at this price point.",
+      "quantity": 20,
+      "rating": {
+        "rate": 5.0,
+        "count": 400
+      }
+    },
+    {
+      "id": 4,
+      "brand": "Asics",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "3.471 ",
+      "name": "Asics Unisex-Adult Gel-1130 Track and Field Shoe",
+      "price": 250,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/51b5c650f2c047d385bb45f3b97e6bb3/a26f6cb61fd147ad8971806e8824a2be.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/47277d44e6714c81945d2a9ee034bb6b/680c4735f27d46d0ac02941c185ae5a5.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/620592beeb614a299fa14e6d8aa67922/ca41b1c9b86b445a8ca8e40901698b85.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/12bce9502cbe4979bf35ae4f8b34591f/41ccbda3c2d04ce68f32a26f0cc79c54.jpg?imwidth=1800"
+      ],
+      "description": "Spanning across decades of design evolution, the GEL-1130 sneaker pays homage to the ninth iteration of the GEL-1000 series. The stability running shoe from 2008 keeps you feeling supported wherever your mind takes you. The essence of this shoe’s construction is rooted in the composition of the GEL-KAYANO 14 sneaker. Its traditional materials have been repurposed with suede paneling to evolve the retro runner with a more modern look. Additionally, this retro runner’s comfort is remixed for the streets, featuring GEL technology in the heel for lasting comfort.",
+      "quantity": 20,
+      "rating": {
+        "rate": 4.5,
+        "count": 400
+      }
+    },
+    {
+      "id": 5,
+      "brand": "Converse",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "4.471 ",
+      "name": "Converse Men's Run Star Hike High Top Sneakers",
+      "price": 250,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/16d19ade74584bcc960cb9c9e6b94e7e/cb5e73a0451749729d83f107081b59c3.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/5bf6db0b34564fcd97054bc5e755472c/f3c7badc0cac410fab980a12f983f5ba.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/17ac718d7f564b49a982a45684fa20e5/faf42dba3f5d4865baaa92dcf269e097.jpg?imwidth=1800",
+        "https://m.media-amazon.com/images/I/61HxVDV6IVL._UL1500_.jpg",
+        "https://img01.ztat.net/article/spp-media-p1/ee156a49f1af46faa66b9146c0c18b44/c358186b46d4406d9948cb6bc6be3fd6.jpg?imwidth=1800"
+      ],
+      "description": "The Run Star Hike features an oversized, raised rubber sole and an eye-catching star heel counter. It also has an Ortholite insole for extra comfort. The Converse Run Star Hike is available in classic black and white, with outsoles in other hues. It is now available in low and high styles.",
+      "quantity": 20,
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "id": 6,
+      "brand": "New balance",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "new balance Women's 850 Pink/White Running Shoe",
+      "price": 150,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/0f0a7f9f76a04ae78899c7e4f00a4e03/b0a0ed6cf45a4c2bb44eb43f0660ea10.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/e777f28b89e04cb58b7dce314f312df5/f3c9f113dddc4c03ad402c5b9e441518.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/6a4957b6e3804b379cffe7e6d0b40dad/206fefd673ac40f082b6b4e1dd961f6d.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/a4b6221c4d5c41f986487761e8daa4dd/5219862e230c44889b1775ad58894a21.jpg?imwidth=1800"
+      ],
+      "description": "Experience the comfort and support of the original New Balance women's 850 lifestyle running shoe. First introduced in 1996, this women's sneaker offers a sleek silhouette and progressive elements. Webbing lace detail and a stylish mix of synthetic and mesh adorn the upper. ABZORB technology in the sole offers comfortable cushioning, while a Rollbar medial post helps with overpronation.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.3,
+        "count": 200
+      }
+    },
+    {
+      "id": 7,
+      "brand": "Vans",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "Vans Men's Mn Skate Slip-on Sneaker",
+      "price": 100,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/126f62b409f94d3dbcda121a003f323d/a5e77a3732fa4e6998e543c0a9b3a701.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/7e1d2f8bed694c43bb23e6855de6f191/1e4994d4ca264a38bee6f0b2f3ee55c9.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/583154e05fb544db89acba47888fdc16/1b8f8b44001f4aa086ea306d78412297.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/760ce5f8da6e4ac58389f99ff53b642d/6681f767747d425bbb1dc816e08ac47e.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/eeb01975e48a4372916ce1c476ed4cae/a36231bdfc6d4e6b8ccb342d986f82ac.jpg?imwidth=1800"
+      ],
+      "description": "Vans Men (Krooked by Natas for Ray) black Canvas Casual Sneakers",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.0,
+        "count": 200
+      }
+    },
+    {
+      "id": 8,
+      "brand": "Vans",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "Nike Women's Air Max 270 React",
+      "price": 500,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/636952e60aed49b480ee247314b47191/742279f3422c4d8aa7d76d0b0271cd44.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/451c0d67afcc46d1a5e391deeceaf14b/8f1ccb68f7c94b3798107f2fda32f712.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/e7a42d8f3bfd47dbbee35f3b3577048b/1065bfa12d214ef6b518ca476a2d9e24.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/5326702e32c0411e9d8c9de356963987/d70a226305be4278bca84e6bb0e62793.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/476dca5d054e4d7f89a4bec4eca1c5b9/f28399d8cc6c47d0a30c4fadc3f7daaa.jpg?imwidth=1800"
+      ],
+      "description": "The Nike Air Max 270 React combines some of Nike's latest cushioning innovations to create an ultra comfortable and supportive sneaker. They're constructed with a multi-layered no-sew textile upper, feature React cushioning, a 270 Max Air heel unit, rope laces, heel pull tab, and a rubber outsole.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.9,
+        "count": 200
+      }
+    }, {
+      "id": 9,
+      "brand": "Nike",
+      "sizes": [38, 40, 42, 44],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "1.371 ",
+      "name": "Nike Air Max 90 Futura",
+      "price": 161,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/1ab00f95651f4fcdb0baabe3efe6d632/4fe2f141a7be4dc3960de2f75c3ba996.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/58e8a74355984cf78993c7473c3a2539/8b20812b3bed447a9e263fb19ce1d404.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/a5d34a5beb61424b8ae16aaa1b2b2235/2178a93a4408426e9dec82ebf0987c5c.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/18d5262e66cc4a0e9c1de89a965ab76c/ca80f67a7e59472ba5302452d3bbb9da.jpg?imwidth=1800"
+      ],
+      "description": "We've reimagined an icon of Air with bursts of high-energy colors and layered leather overlays to bring you skillfully crafted luxury. Plus, plush ankle padding mixes with tried-and-true Air cushioning for comfort you have to feel to believe. With a design that's playful, sporty and oh-so comfortable, the Nike Air Max 90 Futura is all about stepping into the future.",
+      "quantity": 30,
+      "rating": {
+        "rate": 4.1,
+        "count": 500
+      }
+    },
+    {
+      "id": 10,
+      "brand": "Adidas",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "5.471 ",
+      "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
+      "price": 120,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/1bb35785bad34016952cdb808840b8a6/3b9b4fabad8648cb8ce8606bb15d46f4.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/44e9b956a79040489c35ba9faa6f1634/3761d475c36c48328aed733c27072ff2.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/c4df9f0041574d1c862df4346c967e68/cc0ff0abc167414d8b8d8a89cfce547c.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/7282f241fec04d7c98dd303c95a70804/702a2a09eb5947f2850269c395f4e9a8.jpg?imwidth=1800"
+      ],
+      "description": "For A Forward-Thinking Look, Choose These Men'S Adidas Running-Inspired Shoes. They Have The Stability You Need With A Chunky Outsole And A Lightweight Cloudfoam Midsole. The Synthetic Upper Has Contrasting 3-Stripes For A Unique Look. Made With A Series Of Recycled Materials, This Upper Features At Least 50% Recycled Content. This Product Represents Just One Of Our Solutions To Help End Plastic Waste.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.0,
+        "count": 300
+      }
+    },
+    {
+      "id": 11,
+      "brand": "Reebok",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "5.471 ",
+      "name": "Reebok X LOONEY TUNES CLUB C 85 UNISEX - Trainers",
+      "price": 180,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/2a8e292b23d64352a1b6d1d7e254fbd9/f57b3ce758e74b8bbfbeda3daf78a4c0.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/9e5b226cadd94f8a800f11a9ff6f1ee7/7a1c864a1e2d4c7d80f9b943313c0e0d.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/9fbdf79ad8ac4c4295af5451a2ce40aa/2af65b8090754704b9c2c3d59244c2b0.jpg?imwidth=1800"
+      ],
+      "description": "An upgraded version of Stride Runner designed specially for Walking category. Extremely light weight product with Astrofoam Technolgy Outsole which gives extreme comfort at this price point.",
+      "quantity": 20,
+      "rating": {
+        "rate": 5.0,
+        "count": 400
+      }
+    },
+    {
+      "id": 12,
+      "brand": "Asics",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "3.471 ",
+      "name": "Asics Unisex-Adult Gel-1130 Track and Field Shoe",
+      "price": 250,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/51b5c650f2c047d385bb45f3b97e6bb3/a26f6cb61fd147ad8971806e8824a2be.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/47277d44e6714c81945d2a9ee034bb6b/680c4735f27d46d0ac02941c185ae5a5.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/620592beeb614a299fa14e6d8aa67922/ca41b1c9b86b445a8ca8e40901698b85.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/12bce9502cbe4979bf35ae4f8b34591f/41ccbda3c2d04ce68f32a26f0cc79c54.jpg?imwidth=1800"
+      ],
+      "description": "Spanning across decades of design evolution, the GEL-1130 sneaker pays homage to the ninth iteration of the GEL-1000 series. The stability running shoe from 2008 keeps you feeling supported wherever your mind takes you. The essence of this shoe’s construction is rooted in the composition of the GEL-KAYANO 14 sneaker. Its traditional materials have been repurposed with suede paneling to evolve the retro runner with a more modern look. Additionally, this retro runner’s comfort is remixed for the streets, featuring GEL technology in the heel for lasting comfort.",
+      "quantity": 20,
+      "rating": {
+        "rate": 4.5,
+        "count": 400
+      }
+    },
+    {
+      "id":13,
+      "brand": "Converse",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "4.471 ",
+      "name": "Converse Men's Run Star Hike High Top Sneakers",
+      "price": 250,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/16d19ade74584bcc960cb9c9e6b94e7e/cb5e73a0451749729d83f107081b59c3.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/5bf6db0b34564fcd97054bc5e755472c/f3c7badc0cac410fab980a12f983f5ba.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/17ac718d7f564b49a982a45684fa20e5/faf42dba3f5d4865baaa92dcf269e097.jpg?imwidth=1800",
+        "https://m.media-amazon.com/images/I/61HxVDV6IVL._UL1500_.jpg",
+        "https://img01.ztat.net/article/spp-media-p1/ee156a49f1af46faa66b9146c0c18b44/c358186b46d4406d9948cb6bc6be3fd6.jpg?imwidth=1800"
+      ],
+      "description": "The Run Star Hike features an oversized, raised rubber sole and an eye-catching star heel counter. It also has an Ortholite insole for extra comfort. The Converse Run Star Hike is available in classic black and white, with outsoles in other hues. It is now available in low and high styles.",
+      "quantity": 20,
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "id": 14,
+      "brand": "New balance",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "new balance Women's 850 Pink/White Running Shoe",
+      "price": 150,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/0f0a7f9f76a04ae78899c7e4f00a4e03/b0a0ed6cf45a4c2bb44eb43f0660ea10.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/e777f28b89e04cb58b7dce314f312df5/f3c9f113dddc4c03ad402c5b9e441518.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/6a4957b6e3804b379cffe7e6d0b40dad/206fefd673ac40f082b6b4e1dd961f6d.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/a4b6221c4d5c41f986487761e8daa4dd/5219862e230c44889b1775ad58894a21.jpg?imwidth=1800"
+      ],
+      "description": "Experience the comfort and support of the original New Balance women's 850 lifestyle running shoe. First introduced in 1996, this women's sneaker offers a sleek silhouette and progressive elements. Webbing lace detail and a stylish mix of synthetic and mesh adorn the upper. ABZORB technology in the sole offers comfortable cushioning, while a Rollbar medial post helps with overpronation.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.3,
+        "count": 200
+      }
+    },
+    {
+      "id": 15,
+      "brand": "Vans",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "Vans Men's Mn Skate Slip-on Sneaker",
+      "price": 100,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/126f62b409f94d3dbcda121a003f323d/a5e77a3732fa4e6998e543c0a9b3a701.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/7e1d2f8bed694c43bb23e6855de6f191/1e4994d4ca264a38bee6f0b2f3ee55c9.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/583154e05fb544db89acba47888fdc16/1b8f8b44001f4aa086ea306d78412297.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/760ce5f8da6e4ac58389f99ff53b642d/6681f767747d425bbb1dc816e08ac47e.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/eeb01975e48a4372916ce1c476ed4cae/a36231bdfc6d4e6b8ccb342d986f82ac.jpg?imwidth=1800"
+      ],
+      "description": "Vans Men (Krooked by Natas for Ray) black Canvas Casual Sneakers",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.0,
+        "count": 200
+      }
+    },
+    {
+      "id": 16,
+      "brand": "Vans",
+      "sizes": [32, 36, 40],
+      "colors": ["blue", "yellow", "purple"],
+      "sold": "471 ",
+      "name": "Nike Women's Air Max 270 React",
+      "price": 500,
+      "image": [
+        "https://img01.ztat.net/article/spp-media-p1/636952e60aed49b480ee247314b47191/742279f3422c4d8aa7d76d0b0271cd44.jpg?imwidth=1800&filter=packshot",
+        "https://img01.ztat.net/article/spp-media-p1/451c0d67afcc46d1a5e391deeceaf14b/8f1ccb68f7c94b3798107f2fda32f712.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/e7a42d8f3bfd47dbbee35f3b3577048b/1065bfa12d214ef6b518ca476a2d9e24.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/5326702e32c0411e9d8c9de356963987/d70a226305be4278bca84e6bb0e62793.jpg?imwidth=1800",
+        "https://img01.ztat.net/article/spp-media-p1/476dca5d054e4d7f89a4bec4eca1c5b9/f28399d8cc6c47d0a30c4fadc3f7daaa.jpg?imwidth=1800"
+      ],
+      "description": "The Nike Air Max 270 React combines some of Nike's latest cushioning innovations to create an ultra comfortable and supportive sneaker. They're constructed with a multi-layered no-sew textile upper, feature React cushioning, a 270 Max Air heel unit, rope laces, heel pull tab, and a rubber outsole.",
+      "quantity": 10,
+      "rating": {
+        "rate": 4.9,
+        "count": 200
+      }
     }
+  ],
+
+  "brands": [
+    {
+      "name": "Nike",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png?20220908234918"
+    },
+    {
+      "name": "Adidas",
+      "image": "https://www.svgrepo.com/show/333479/adidas.svg"
+    },
+    {
+      "name": "Puma",
+      "image": "https://companieslogo.com/img/orig/PUM.DE-73e7228d.png?t=1649479959"
+    },
+    {
+      "name": "Asics",
+      "image": "assets/svg/brand/Asics.svg"
+    },
+    {
+      "name": "Reebok",
+      "image": "https://ww1.freelogovectors.net/wp-content/uploads/2023/02/reeboklogo_freelogovectors.net_.png?lossy=1&w=2560&ssl=1"
+    },
+    {
+      "name": "New Balance",
+      "image": "https://logos-world.net/wp-content/uploads/2020/09/New-Balance-Emblem.png"
+    },
+    {
+      "name": "Converse",
+      "image": "https://1000logos.net/wp-content/uploads/2021/04/Converse-logo.png"
+    },
+
+    "Vans",
+    "Skechers",
+    "Fila",
+    "Under Armour",
+    "Crocs",
+    "Timberland",
+    "Dr. Martens",
+    "Clarks",
+    "Brooks",
+    "Hoka One One",
+    "Merrell",
+    "Salomon",
+    "Teva",
+    "Birkenstock",
+    "Gucci",
+    "Balenciaga",
+    "Prada",
+    "Chanel"
   ]
 }

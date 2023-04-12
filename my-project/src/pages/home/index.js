@@ -19,7 +19,11 @@ export function home(params) {
     child: El({
       element: 'div',
       className: 'flex flex-col  gap-3 justify-between ',
-      child: [headerProfile(), searchHome(), barandsHome(),productHome()]
+      child: [headerProfile(), searchHome(), barandsHome(),productHome(), El({
+        element:"p",
+        child:"p",
+        id:"footer"
+      })]
     }),
   });
 }

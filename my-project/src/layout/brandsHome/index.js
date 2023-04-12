@@ -8,9 +8,9 @@ export function barandsHome(params) {
     element: 'div',
     className: 'flex gap-2 flex-wrap items-center justify-evenly gap-5 ',
   });
-  GetData('shoes').then((res) => {
-    const data = res.data[1].brands;
-    console.log(data);
+  GetData('brands').then((res) => {
+    const data = res.data;
+
     brandGrid(elem, data), brandScroll(elem, data);
   });
   return elem;
