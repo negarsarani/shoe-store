@@ -1,13 +1,18 @@
+import { routerFunc } from '@/router';
 import El from '../El';
 
 export function EachcardHome(item) {
   return El({
     element: 'div',
+    
     className:
       'flex flex-col items-center justify-center p-2  overflow-hidden text-ellipsis truncate ',
     child: [
       El({
         element: 'div',
+        onclick:function name(params) {
+          routerFunc().navigate(`product:${item.id}`)
+        },
         className:
           'card bg-bg-card w-full flex items-center justify-center cursor-pointer  rounded-3xl ',
         child: El({

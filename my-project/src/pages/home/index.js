@@ -12,6 +12,7 @@ export function home(params) {
     element: 'div',
     id: 'home',
     onclick: function name(e) {
+
       if (!e.target.dataset.search) {
         const search = document.getElementById('search');
         search.classList.remove('border-2');

@@ -7,12 +7,13 @@ import { descpages } from './pages/onboarding/getstarted/descpages';
 import { login } from './pages/login';
 import { home } from './pages/home';
 import { Loading } from './library/loading';
+import { singleProduct } from './pages/singleproduct';
 function App() {
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: home(),
+    child: singleProduct(),
   });
 }
 export default App;

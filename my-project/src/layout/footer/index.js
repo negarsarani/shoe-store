@@ -1,4 +1,5 @@
-import El from "@/library/El";
+import El from '@/library/El';
+import { routerFunc } from '@/router';
 
 export function footerMenue(params) {
   return El({
@@ -14,12 +15,15 @@ export function footerMenue(params) {
             element: 'div',
             className:
               'flex flex-col md:flex-row items-center justify-center  md:gap-2  cursor-pointer ',
+            onclick: function name() {
+              routerFunc().navigate('/home');
+            },
             child: [
               El({
                 element: 'div',
                 child: El({
                   element: 'img',
-                  className:"",
+                  className: '',
                   src: 'assets/svg/home.svg',
                 }),
               }),
@@ -34,6 +38,9 @@ export function footerMenue(params) {
             element: 'div',
             className:
               'flex flex-col md:flex-row items-center justify-center  md:gap-2  cursor-pointer ',
+            onclick: function name() {
+              routerFunc().navigate('/cart');
+            },
             child: [
               El({
                 element: 'div',
@@ -53,6 +60,9 @@ export function footerMenue(params) {
             element: 'div',
             className:
               'flex flex-col md:flex-row items-center justify-center  md:gap-2  cursor-pointer ',
+            onclick: function name() {
+              routerFunc().navigate('/orders');
+            },
             child: [
               El({
                 element: 'div',
@@ -72,6 +82,9 @@ export function footerMenue(params) {
             element: 'div',
             className:
               'flex flex-col md:flex-row items-center justify-center  md:gap-2   cursor-pointer',
+            onclick: function name() {
+              routerFunc().navigate('/wallet');
+            },
             child: [
               El({
                 element: 'div',
@@ -91,6 +104,9 @@ export function footerMenue(params) {
             element: 'div',
             className:
               'flex flex-col md:flex-row items-center justify-center  md:gap-2   cursor-pointer',
+            onclick: function name() {
+              routerFunc().navigate('/profile');
+            },
             child: [
               El({
                 element: 'div',
