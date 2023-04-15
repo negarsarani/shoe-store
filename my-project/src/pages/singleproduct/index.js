@@ -177,14 +177,106 @@ export function singleProduct(params) {
                   element: 'div',
                   className: '',
                   child:
-                    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit perferendis quae illo placeat animi reprehenderit sunt unde nobis pariatur, ab iusto dicta fugit natus exercitationem. Odio deleniti laboriosam tenetur id perspiciatis, repellendus corrupti dolores quibusdam. Recusandae nihil magnam harum. ',
+                    'Lorem, ipsum dolor sit amet consectetur adipisicing elit.                                    ',
                 }),
               ],
             }),
             El({
               element: 'div',
-              className: '',
-              child: '',
+              className: 'grid grid-cols-2 ',
+              child: [
+                El({
+                  element: 'div',
+                  className: 'flex flex-col',
+                  child: [
+                    El({
+                      element: 'div',
+                      className: '',
+                      child: 'Size',
+                    }),
+                    El({
+                      element: 'div',
+                      className: 'flex items-center justify-start',
+                      dataset: { parentDiv: 'parentDiv' },
+                      onclick: function name(e) {
+                        const target = e.target;
+                        if (target.dataset) {
+                          const mainsize = target.dataset.size;
+                          const parent = target.parentElement.parentElement;
+                          if (parent.dataset.parentDiv) {
+                            const [...child] =
+                              parent.querySelectorAll('[data-size-parent]');
+                            child.map((item) => {
+                              // console.log(mainsize);
+                              if (item.dataset.sizeParent === mainsize) {
+                                item.classList.remove('border-text-gray');
+                                item.classList.remove('text-text-gray');
+                                item.classList.remove('text-white');
+                                item.classList.add(
+                                  'border-black',
+                                  'bg-black',
+                                  'text-white'
+                                );
+                              }
+                              if (item.dataset.sizeParent !== mainsize) {
+                                item.classList.remove('text-white');
+                                item.classList.remove('border-black'),
+                                  item.classList.remove('bg-black'),
+                                  item.classList.add(
+                                    'border-text-gray',
+                                    'text-text-gray'
+                                  );
+                              }
+                            });
+                          }
+                        }
+                      },
+                      child: [
+                        El({
+                          element: 'div',
+                          dataset: { sizeParent: '40' },
+                          className:
+                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 border-text-gray',
+                          child: El({
+                            dataset: { size: '40' },
+                            element: 'div',
+                            className: '',
+                            child: '40',
+                          }),
+                        }),
+                        El({
+                          element: 'div',
+                          dataset: { sizeParent: '42' },
+                          className:
+                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 border-text-gray',
+                          child: El({
+                            dataset: { size: '42' },
+                            element: 'div',
+                            className: '',
+                            child: '42',
+                          }),
+                        }),
+                        El({
+                          element: 'div',
+                          dataset: { sizeParent: '44' },
+                          className:
+                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 border-text-gray',
+                          child: El({
+                            dataset: { size: '44' },
+                            element: 'div',
+                            className: '',
+                            child: '44',
+                          }),
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+                El({
+                  element: 'div',
+                  className: '',
+                }),
+              ],
             }),
             El({
               element: 'div',

@@ -16,9 +16,10 @@ export default {
         'shoea':"#152536",
         'btn-black':"#212529",
         'white-gray':"#FAFAFA",
-        'bg-gary':"##ECECED",
+        'bg-gary':"#ECECED",
         'bg-dark':"#343A40",
-        'bg-card':"#F3F3F3"
+        'bg-card':"#F3F3F3",
+        'text-gray':"#717171",
 
       },
     },
