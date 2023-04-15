@@ -69,100 +69,106 @@ export function singleProduct(params) {
       }),
       El({
         element: 'div',
-        className: ' w-full',
+        className: ' w-full ',
         child: El({
           element: 'div',
           className: ' w-full ',
           child: [
             El({
               element: 'div',
-              className: 'flex justify-between w-full px-3 py-2 ',
-              child: [
-                El({
-                  element: 'div',
-                  className:
-                    'flex flex-col overflow-hidden text-ellipsis truncate items-start gap-3 justify-end border-b pb-4',
-                  child: [
-                    El({
-                      element: 'h1',
-                      className:
-                        'overflow-hidden text-ellipsis truncate font-semibold text-3xl',
-                      child: 'Running Sportwear',
-                    }),
-                    El({
-                      element: 'div',
-                      className: 'flex gap-3 tem-center justify-center',
-                      child: [
-                        El({
-                          element: 'div',
-                          className: 'flex  bg-[#ECEDED] rounded-md ',
-                          child: El({
-                            element: 'span',
-                            className: 'bg-bg-gray px-3 ',
-                            child: '5,322 sold',
-                          }),
-                        }),
-                        El({
-                          element: 'div',
-                          className: 'flex gap-1',
-                          child: [
-                            El({
-                              element: 'div',
-                              className: '',
-                              child: El({
-                                element: 'img',
-                                className: 'w-6',
-                                src: 'assets/svg/star.svg',
-                              }),
-                            }),
-                            El({
-                              element: 'div',
-                              className: 'flex gap-1',
-                              child: [
-                                El({
-                                  element: 'span',
-                                  className: '',
-                                  child: '4.3',
-                                }),
-                                El({
-                                  element: 'span',
-                                  className: '',
-                                  child: '(5.244 reviews)',
-                                }),
-                              ],
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  ],
-                }),
-                El({
-                  element: 'div',
-                  onclick: function name(e) {
-                    if (e.target.parentElement.dataset.heart) {
-                      e.target.parentElement.classList.toggle('bg-bg-dark');
-                      e.target.src = e.target.src.includes(
-                        'assets/svg/heart.svg'
-                      )
-                        ? 'assets/svg/heart-white.svg'
-                        : 'assets/svg/heart.svg';
-                    }
-                  },
-                  className: 'pl-1',
-                  child: El({
+              className: ' px-3 py-2 ',
+              child: El({
+                element: 'div',
+                className: 'flex justify-between w-full  border-b pb-4',
+                child: [
+                  El({
                     element: 'div',
-                    dataset: { heart: 'heart' },
                     className:
-                      'rounded-full w-10 h-10  flex items-center justify-center',
+                      'flex flex-col overflow-hidden text-ellipsis truncate items-start gap-3 justify-end',
+                    child: [
+                      El({
+                        element: 'h1',
+                        className:
+                          'overflow-hidden text-ellipsis truncate font-semibold text-3xl',
+                        child: 'Running Sportwear',
+                      }),
+                      El({
+                        element: 'div',
+                        className:
+                          'flex gap-3 tem-center justify-center text-[.8rem]',
+                        child: [
+                          El({
+                            element: 'div',
+                            className:
+                              'flex items-center bg-[#ECEDED] rounded-md ',
+                            child: El({
+                              element: 'span',
+                              className: 'bg-bg-gray px-3 ',
+                              child: '5,322 sold',
+                            }),
+                          }),
+                          El({
+                            element: 'div',
+                            className: 'flex gap-1',
+                            child: [
+                              El({
+                                element: 'div',
+                                className: '',
+                                child: El({
+                                  element: 'img',
+                                  className: 'w-6',
+                                  src: 'assets/svg/star.svg',
+                                }),
+                              }),
+                              El({
+                                element: 'div',
+                                className: 'flex items-center gap-1',
+                                child: [
+                                  El({
+                                    element: 'span',
+                                    className: '',
+                                    child: '4.3',
+                                  }),
+                                  El({
+                                    element: 'span',
+                                    className: '',
+                                    child: '(5.244 reviews)',
+                                  }),
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  El({
+                    element: 'div',
+                    onclick: function name(e) {
+                      if (e.target.parentElement.dataset.heart) {
+                        e.target.parentElement.classList.toggle('bg-bg-dark');
+                        e.target.src = e.target.src.includes(
+                          'assets/svg/heart.svg'
+                        )
+                          ? 'assets/svg/heart-white.svg'
+                          : 'assets/svg/heart.svg';
+                      }
+                    },
+                    className: 'pl-1',
                     child: El({
-                      element: 'img',
-                      className: 'w-6',
-                      src: 'assets/svg/heart.svg',
+                      element: 'div',
+                      dataset: { heart: 'heart' },
+                      className:
+                        'rounded-full w-10 h-10  flex items-center justify-center',
+                      child: El({
+                        element: 'img',
+                        className: 'w-6',
+                        src: 'assets/svg/heart.svg',
+                      }),
                     }),
                   }),
-                }),
-              ],
+                ],
+              }),
             }),
             El({
               element: 'div',
@@ -236,7 +242,7 @@ export function singleProduct(params) {
                           element: 'div',
                           dataset: { sizeParent: '40' },
                           className:
-                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 border-text-gray',
+                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 cursor-pointer border-text-gray',
                           child: El({
                             dataset: { size: '40' },
                             element: 'div',
@@ -248,7 +254,7 @@ export function singleProduct(params) {
                           element: 'div',
                           dataset: { sizeParent: '42' },
                           className:
-                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 border-text-gray',
+                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 cursor-pointer border-text-gray',
                           child: El({
                             dataset: { size: '42' },
                             element: 'div',
@@ -260,7 +266,7 @@ export function singleProduct(params) {
                           element: 'div',
                           dataset: { sizeParent: '44' },
                           className:
-                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2 border-text-gray',
+                            ' flex items-center rounded-full justify-center w-10 h-10 text-text-gray border border-2  cursor-pointer border-text-gray',
                           child: El({
                             dataset: { size: '44' },
                             element: 'div',
@@ -390,7 +396,7 @@ export function singleProduct(params) {
                         }),
                         El({
                           element: 'div',
-                          className: '',
+                          className: 'font-semibold',
                           child: '1',
                           dataset: { input: 'Quantity' },
                         }),
@@ -414,9 +420,52 @@ export function singleProduct(params) {
         }),
       }),
       El({
-        element: 'div',
-        className: '',
-        child: '',
+        element: 'footer',
+        className: 'w-full px-3 ',
+        child: El({
+          element: 'div',
+          className:
+            'border-t border-bg-gray w-full flex gap-7 items-center py-4',
+          child: [
+            El({
+              element: 'div',
+              className: '',
+              child: [
+                El({
+                  element: 'div',
+                  className: '',
+                  child: 'total price',
+                }),
+                El({
+                  element: 'div',
+                  className: 'font-semibold text-xl',
+                  child: '$240.000',
+                }),
+              ],
+            }),
+            El({
+              element: 'div',
+              className:
+                'bg-btn-black rounded-3xl flex items-center justify-center flex-grow gap-2 px-4 py-3 shadow-2xl cursor-pointer',
+              child: [
+                El({
+                  element: 'div',
+                  className: 'w-5',
+                  child: El({
+                    element: 'img',
+                    className: '',
+                    src: 'assets/svg/bag-fill.svg',
+                  }),
+                }),
+                El({
+                  element: 'span',
+                  className: 'text-white',
+                  child: 'Add to cart',
+                }),
+              ],
+            }),
+          ],
+        }),
       }),
     ],
   });
