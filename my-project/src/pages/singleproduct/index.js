@@ -183,20 +183,20 @@ export function singleProduct(params) {
             }),
             El({
               element: 'div',
-              className: 'grid grid-cols-2 ',
+              className: 'grid grid-cols-2  ',
               child: [
                 El({
                   element: 'div',
-                  className: 'flex flex-col',
+                  className: 'flex flex-col pl-3 gap-1',
                   child: [
                     El({
                       element: 'div',
-                      className: '',
+                      className: 'font-semibold text-md',
                       child: 'Size',
                     }),
                     El({
                       element: 'div',
-                      className: 'flex items-center justify-start',
+                      className: 'flex gap-3  items-center justify-start',
                       dataset: { parentDiv: 'parentDiv' },
                       onclick: function name(e) {
                         const target = e.target;
@@ -275,13 +275,120 @@ export function singleProduct(params) {
                 El({
                   element: 'div',
                   className: '',
+                  child: El({
+                    element: 'div',
+                    className: 'flex flex-col gap-1',
+                    child: [
+                      El({
+                        element: 'div',
+                        className: 'font-semibold text-md',
+                        child: 'color',
+                      }),
+                      El({
+                        element: 'div',
+                        className: 'menu-scroll-x overflow-x-scroll',
+                        onclick: function name(e) {
+                          const target = e.target;
+                          if (target.dataset.color) {
+                            const parent = target.parentElement.parentElement;
+                            const [...child] =
+                              parent.querySelectorAll('[data-color]');
+                            child.map((item) => {
+                              if (item.childNodes.length === 1) {
+                                item.removeChild(item.childNodes[0]);
+                              }
+                            });
+                            target.append(
+                              El({
+                                element: 'img',
+                                src: 'assets/svg/tick.svg',
+                              })
+                            );
+                          }
+                        },
+                        child: El({
+                          element: 'div',
+                          className: 'flex  gap-3 items-center flex-shrink-0 ',
+                          child: [
+                            El({
+                              element: 'div',
+                              dataset: { color: 'white' },
+                              classList:
+                                'flex items-center rounded-full flex-shrink-0 cursor-pointer justify-center w-10 h-10 bg-slate-100',
+                            }),
+                            El({
+                              element: 'div',
+                              dataset: { color: 'red' },
+                              classList:
+                                'flex items-center rounded-full flex-shrink-0 cursor-pointer justify-center w-10 h-10 bg-red-300',
+                            }),
+                            El({
+                              element: 'div',
+                              dataset: { color: 'red' },
+                              classList:
+                                'flex items-center rounded-full flex-shrink-0 cursor-pointer justify-center w-10 h-10 bg-yellow-300',
+                            }),
+                            El({
+                              element: 'div',
+                              dataset: { color: 'red' },
+                              classList:
+                                'flex items-center rounded-full flex-shrink-0 cursor-pointer justify-center w-10 h-10 bg-blue-300',
+                            }),
+                          ],
+                        }),
+                      }),
+                    ],
+                  }),
                 }),
               ],
             }),
             El({
               element: 'div',
               className: '',
-              child: '',
+              child: El({
+                element: 'div',
+                className: 'flex pl-3 py-4',
+                child: [
+                  El({
+                    element: 'span',
+                    className: 'font-semibold',
+                    child: 'Quantity',
+                  }),
+                  El({
+                    element: 'div',
+                    className: '',
+                    child: El({
+                      element: 'div',
+                      className: 'bg-bg-card flex',
+                      child: [
+                        El({
+                          element: 'div',
+                          className: 'w-5 flex items-center justify-center',
+                          child: El({
+                            element: 'img',
+                            className: '',
+                            src: "assets/svg/minus.svg",
+                          }),
+                        }),
+                        El({
+                          element: 'div',
+                          // className: '',
+                          child: '100',
+                        }),
+                        El({
+                          element: 'div',
+                          className: 'flex items-center justify-center w-5',
+                          child: El({
+                            element: 'img',
+                            // className: '',
+                            src: 'assets/svg/add.svg',
+                          }),
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
             }),
           ],
         }),
