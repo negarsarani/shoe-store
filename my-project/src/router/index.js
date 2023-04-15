@@ -11,7 +11,7 @@ export function routerFunc() {
   const routediv = document.getElementById('routes');
   const router = new Navigo('/');
   router
-    .on('/wellcome', function () {
+    .on('/', function () {
       onboarding();
     })
     .on('/auth', function () {

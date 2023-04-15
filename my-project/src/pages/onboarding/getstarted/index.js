@@ -14,7 +14,7 @@ export function getStarted() {
     element: 'div',
     id: 'getStarted',
     className:
-      "transition duration-500 ease-in-out transform bg-fixed translate-x-full h-full w-full flex flex-col justify-end bg-[url('/assets/img/Wallpaper-page2.png')]  bg-cover bg-center text-white",
+      " bg-fixed  h-full w-full flex flex-col justify-end bg-[url('/assets/img/Wallpaper-page2.png')]  bg-cover bg-center text-white",
     child: El({
       element: 'div',
       className: 'w-full w-full  pl-5 pr-2 pb-14 ',

@@ -16,8 +16,9 @@ export function settingSwipper() {
       navigation: 'true',
     },
   });
-  if (navigation.currentEntry.url === 'http://localhost:5173/onboarding') {
+  if (navigation.currentEntry.url === 'http://localhost:5173/') {
     swiper.on('slideChange', function () {
+      console.log("a");
       const descpages = document.querySelector('#descpages');
       const datachange = descpages.querySelectorAll('[data-change]');
       const [description, button] = [...datachange];

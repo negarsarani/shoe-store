@@ -6,7 +6,8 @@ export function descpages() {
   return El({
     element: 'div',
     id: 'descpages',
-    className: 'h-full w-full bg-white transition duration-500 ease-in-out transform  ',
+    className:
+      'h-full w-full bg-white transition duration-500 ease-in-out transform  ',
     child: [
       El({
         element: 'div',
@@ -31,7 +32,7 @@ export function descpages() {
           className: 'text-white w-full   bg-btn-black p-2 rounded-3xl',
           dataset: { change: 'button' },
           child: 'Next',
-          onclick: function name() {
+          onclick: function name(e) {
             const swiper = document.querySelector('.swiper').swiper;
             const descpages = document.querySelector('#descpages');
             const datachange = descpages.querySelectorAll('[data-change]');
@@ -39,19 +40,17 @@ export function descpages() {
             if (swiper.activeIndex === 0) {
               button.innerHTML = 'Next';
               description.innerHTML =
-                'We provide high quality products just for you';
-            }
-            if (swiper.activeIndex === 1) {
-              button.innerHTML = 'Next';
-              description.innerHTML =
                 'Your satisfaction is our number one periority';
             }
-            if (swiper.activeIndex === 2) {
+            if (swiper.activeIndex === 1) {
               description.innerHTML =
                 'Let’s fulfill your fashion needs with shoearight now!';
               button.innerHTML = 'Get Started';
-              
             }
+            if (swiper.activeIndex === 2) {
+              routerFunc().navigate('/auth');
+            }
+
             swiper.slideNext();
           },
           eventListener: [
@@ -67,8 +66,6 @@ export function descpages() {
 }
 
 function changeRoute(e) {
-  const swiper = document.querySelector('.swiper').swiper;
-  if (swiper.activeIndex === 2) {
-    routerFunc().navigate("/auth")
+  if (e.target.innerText === 'Get Started') {
   }
 }

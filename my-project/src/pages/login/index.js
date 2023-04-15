@@ -1,6 +1,7 @@
 import { LoginForm } from '@/layout/form';
 import { validationForm } from '@/layout/form/validation';
 import El from '@/library/El';
+import { routerFunc } from '@/router';
 
 export function login(params) {
   return El({
@@ -14,9 +15,12 @@ export function login(params) {
           element: 'img',
           className: 'cursor-pointer',
           onclick: function name() {
-            console.log("s");
+            console.log('s');
           },
           src: 'assets/svg/arrow.svg',
+          onclick: function name() {
+            routerFunc().navigate('/');
+          },
         }),
       }),
 

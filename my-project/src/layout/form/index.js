@@ -40,8 +40,9 @@ export function LoginForm() {
               dataset: { input: 'password' },
               name: 'password',
               className:
-                'ext-black w-full cursor-pointer   focus:outline-none pl-2 bg-transparent',
+                'text-black w-full cursor-pointer   focus:outline-none pl-2 bg-transparent',
               type: 'password',
+              required: true,
               placeholder: 'Password',
             }),
             El({

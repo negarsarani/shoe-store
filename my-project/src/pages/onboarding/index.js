@@ -5,7 +5,6 @@ import { getStarted } from './getstarted';
 export function onboarding() {
   setTimeout(() => {
     const onboarding = document.getElementById('onboarding');
-    onboarding.classList.add('-translate-x-full');
     onboarding.innerHTML = '';
     onboarding.append(getStarted());
   }, 2000);
