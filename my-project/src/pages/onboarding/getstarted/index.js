@@ -2,6 +2,7 @@ import El from '@/library/El';
 import { descpages } from './descpages';
 import { settingSwipper } from '@/layout';
 
+
 export function getStarted() {
   setTimeout(() => {
     const getStarted = document.getElementById('getStarted');

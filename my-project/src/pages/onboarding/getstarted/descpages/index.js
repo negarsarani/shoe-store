@@ -1,4 +1,4 @@
-import { settingSwipper, swiperFunc } from '@/layout';
+import { swiperFunc } from '@/layout';
 import El from '@/library/El';
 import { routerFunc } from '@/router';
 
@@ -10,7 +10,7 @@ export function descpages() {
     child: [
       El({
         element: 'div',
-        className: 'swiper ',
+        className: 'swiper   aspect-[3/4]  ',
         child: swiperFunc(),
       }),
       El({

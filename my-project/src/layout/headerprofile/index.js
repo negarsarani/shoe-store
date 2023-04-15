@@ -85,7 +85,7 @@ export function renderHeaderProfile(item, elem) {
                 child: El({
                   element: 'img',
                   className: '',
-                  src: 'assets/svg/heart.svg',
+                  src: 'assets/svg/heartp.svg',
                 }),
               }),
             ],

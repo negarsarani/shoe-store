@@ -13,7 +13,7 @@ function App() {
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: singleProduct(),
+    child: onboarding(),
   });
 }
 export default App;

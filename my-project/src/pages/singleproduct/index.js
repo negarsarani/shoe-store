@@ -1,4 +1,5 @@
 import El from '@/library/El';
+import { routerFunc } from '@/router';
 
 export function singleProduct(params) {
   return El({
@@ -55,6 +56,9 @@ export function singleProduct(params) {
               element: 'img',
               className: ' cursor-pointer',
               src: 'assets/svg/arrow.svg',
+              onclick: function name(){
+                routerFunc().navigate('home')
+              },
             }),
           }),
           El({
