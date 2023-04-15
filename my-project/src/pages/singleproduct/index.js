@@ -344,10 +344,10 @@ export function singleProduct(params) {
             }),
             El({
               element: 'div',
-              className: '',
+              className: 'py-3',
               child: El({
                 element: 'div',
-                className: 'flex pl-3 py-4',
+                className: 'flex pl-3 items-center justify-start gap-6',
                 child: [
                   El({
                     element: 'span',
@@ -356,32 +356,52 @@ export function singleProduct(params) {
                   }),
                   El({
                     element: 'div',
-                    className: '',
+                    className: 'flex items-center justify-center ',
                     child: El({
                       element: 'div',
-                      className: 'bg-bg-card flex',
+                      className: 'bg-bg-card flex px-3 py-2 gap-2  rounded-3xl',
+                      onclick: function name(e) {
+                        const target = e.target;
+                        if (target.dataset.btn) {
+                          const parent = target.parentElement.parentElement;
+                          const countainer =
+                            parent.querySelector('[data-input]');
+
+                          if (target.dataset.btn === 'minus') {
+                            countainer.innerText > 1
+                              ? (countainer.innerText = --countainer.innerText)
+                              : null;
+                          }
+                          if (target.dataset.btn === 'add') {
+                            countainer.innerText = ++countainer.innerText;
+                          }
+                        }
+                      },
                       child: [
                         El({
                           element: 'div',
                           className: 'w-5 flex items-center justify-center',
                           child: El({
                             element: 'img',
-                            className: '',
-                            src: "assets/svg/minus.svg",
+                            className: 'cursor-pointer',
+                            src: 'assets/svg/minus.svg',
+                            dataset: { btn: 'minus' },
                           }),
                         }),
                         El({
                           element: 'div',
-                          // className: '',
-                          child: '100',
+                          className: '',
+                          child: '1',
+                          dataset: { input: 'Quantity' },
                         }),
                         El({
                           element: 'div',
                           className: 'flex items-center justify-center w-5',
                           child: El({
                             element: 'img',
-                            // className: '',
+                            className: 'cursor-pointer',
                             src: 'assets/svg/add.svg',
+                            dataset: { btn: 'add' },
                           }),
                         }),
                       ],
