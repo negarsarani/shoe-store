@@ -8,12 +8,13 @@ import { login } from './pages/login';
 import { home } from './pages/home';
 import { Loading } from './library/loading';
 import { singleProduct } from './pages/singleproduct';
+import { cart } from './pages/cart';
 function App() {
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: onboarding(),
+    child: singleProduct(),
   });
 }
 export default App;
