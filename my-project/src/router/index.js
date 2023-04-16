@@ -5,6 +5,8 @@ import { login } from '@/pages/login';
 import { home } from '@/pages/home';
 import { singleProduct } from '@/pages/singleproduct';
 import { onboarding } from '@/pages/onboarding';
+import { getCurrentURL } from '@/library/CurrentUrl/CurrentUrl';
+import { settingSwipper } from '@/layout';
 
 // Adding a route
 export function routerFunc() {
@@ -15,8 +17,8 @@ export function routerFunc() {
       onboarding();
     })
     .on('/auth', function () {
-     routediv.innerHTML = ''
-     routediv.append(login());
+      routediv.innerHTML = '';
+      routediv.append(login());
     })
     .on('/home', function () {
       routediv.innerHTML = '';
@@ -24,8 +26,12 @@ export function routerFunc() {
     })
     .on('/product:id', function () {
       routediv.innerHTML = '';
-      return routediv.append(singleProduct());
+      settingSwipper()
+      routediv.append(singleProduct());
+
+  
     })
     .resolve();
+   
   return router;
 }

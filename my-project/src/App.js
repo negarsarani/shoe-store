@@ -10,11 +10,12 @@ import { Loading } from './library/loading';
 import { singleProduct } from './pages/singleproduct';
 import { cart } from './pages/cart';
 function App() {
+  settingSwipper()
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: singleProduct(),
+    child: home(),
   });
 }
 export default App;

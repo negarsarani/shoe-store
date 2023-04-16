@@ -17,6 +17,6 @@ export function brandScroll(elem, data) {
   elem.append(el);
   const divscroll = document.getElementById('divscroll');
   arr.map((item) =>
-    divscroll.insertAdjacentElement('beforeend', EachScrollEl(item))
+    divscroll?.insertAdjacentElement('beforeend', EachScrollEl(item))
   );
 }

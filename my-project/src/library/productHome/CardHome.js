@@ -1,17 +1,22 @@
 import { routerFunc } from '@/router';
 import El from '../El';
+import { getCurrentURL } from '../CurrentUrl/CurrentUrl';
+import { GetData } from '../Api/GetData';
+import { singleProduct } from '@/pages/singleproduct';
+import { settingSwipper } from '@/layout';
 
 export function EachcardHome(item) {
   return El({
     element: 'div',
-    
+
     className:
       'flex flex-col items-center justify-center p-2  overflow-hidden text-ellipsis truncate ',
     child: [
       El({
         element: 'div',
-        onclick:function name(params) {
-          routerFunc().navigate(`product:${item.id}`)
+        onclick: function name(params) {
+          settingSwipper()
+          routerFunc().navigate(`product:${item.id}`);
         },
         className:
           'card bg-bg-card w-full flex items-center justify-center cursor-pointer  rounded-3xl ',

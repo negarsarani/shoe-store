@@ -11,9 +11,10 @@ export function searchHome(params) {
       className:
         'flex justify-center items-center  bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  ',
       onclick: function name() {
-        const search = document.getElementById('search');
-        search.classList.toggle('border-2');
-        search.classList.toggle('border-black');
+          const search = document.getElementById('search');
+          search.classList.toggle('border-2');
+          search.classList.toggle('border-black');
+     
       },
       child: [
         El({

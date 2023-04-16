@@ -1,6 +1,7 @@
 import El from '@/library/El';
 import { parentCardsHome } from './cards';
 import { GetData } from '@/library/Api/GetData';
+import { getCurrentURL } from '@/library/CurrentUrl/CurrentUrl';
 let page;
 export function productHome() {
   const elem = El({
@@ -17,18 +18,19 @@ export function productHome() {
   return elem;
 }
 
-export const observer = new IntersectionObserver((entries) => {
-  const cardHome = document.getElementById('cardHome');
 
-  entries.forEach((loader) => {
-    if (loader.isIntersecting) {
-      GetData(`product?_page=${++page}&_limit=4`).then((res) => {
-        const data = res.data;
-        parentCardsHome(cardHome, data);
-        if (data.length <= 0) {
-            document.getElementById('cardSkleton').innerHTML="";
-        }
-      });
-    }
+export const observer = new IntersectionObserver((entries) => {
+    const cardHome = document.getElementById('cardHome');
+
+    entries.forEach((loader) => {
+      if (loader.isIntersecting) {
+        GetData(`product?_page=${++page}&_limit=4`).then((res) => {
+          const data = res.data;
+          parentCardsHome(cardHome, data);
+          if (data.length <= 0) {
+            document.getElementById('cardSkleton').innerHTML = '';
+          }
+        });
+      }
+    });
   });
-});
