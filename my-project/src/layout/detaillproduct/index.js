@@ -1,7 +1,12 @@
 import El from '@/library/El';
 import { renderColor, renderSize } from './render';
+import { TotalPrice } from '@/library/totalprice/Totalprice';
 
 export function detailsproduct(params) {
+  const obj = {
+    quantity: 1,
+    price: params.price,
+  };
   return El({
     element: 'div',
     className: ' w-full ',
@@ -135,44 +140,45 @@ export function detailsproduct(params) {
                   element: 'div',
                   className:
                     'flex gap-3  items-center justify-start menu-scroll-x overflow-x-scroll',
-                  dataset: { parentDiv: 'parentDiv' },
-                  onclick: function name(e) {
-                    const target = e.target;
-                    if (target.dataset) {
-                      const mainsize = target.dataset.size;
-                      const parent = target.parentElement.parentElement;
-                      if (parent.dataset.parentDiv) {
-                        const [...child] =
-                          parent.querySelectorAll('[data-size-parent]');
-                        child.map((item) => {
-                          // console.log(mainsize);
-                          if (item.dataset.sizeParent === mainsize) {
-                            item.classList.remove('border-text-gray');
-                            item.classList.remove('text-text-gray');
-                            item.classList.remove('text-white');
-                            item.classList.add(
-                              'border-black',
-                              'bg-black',
-                              'text-white'
-                            );
-                          }
-                          if (item.dataset.sizeParent !== mainsize) {
-                            item.classList.remove('text-white');
-                            item.classList.remove('border-black'),
-                              item.classList.remove('bg-black'),
-                              item.classList.add(
-                                'border-text-gray',
-                                'text-text-gray'
-                              );
-                          }
-                        });
-                      }
-                    }
-                  },
+
                   child: El({
                     element: 'div',
+                    dataset: { parentDiv: 'parentDiv' },
                     className: 'flex  gap-3 items-center flex-shrink-0 pr-3',
                     child: renderSize(params.sizes).map((item) => item),
+                    onclick: function name(e) {
+                      const target = e.target;
+                      if (target.dataset) {
+                        const mainsize = target.dataset.size;
+                        const parent = target.parentElement.parentElement;
+                        if (parent.dataset.parentDiv) {
+                          const [...child] =
+                            parent.querySelectorAll('[data-size-parent]');
+                          child.map((item) => {
+                            // console.log(mainsize);
+                            if (item.dataset.sizeParent === mainsize) {
+                              item.classList.remove('border-text-gray');
+                              item.classList.remove('text-text-gray');
+                              item.classList.remove('text-white');
+                              item.classList.add(
+                                'border-black',
+                                'bg-black',
+                                'text-white'
+                              );
+                            }
+                            if (item.dataset.sizeParent !== mainsize) {
+                              item.classList.remove('text-white');
+                              item.classList.remove('border-black'),
+                                item.classList.remove('bg-black'),
+                                item.classList.add(
+                                  'border-text-gray',
+                                  'text-text-gray'
+                                );
+                            }
+                          });
+                        }
+                      }
+                    },
                   }),
                 }),
               ],
@@ -250,11 +256,19 @@ export function detailsproduct(params) {
                         countainer.innerText > 1
                           ? (countainer.innerText = --countainer.innerText)
                           : null;
+                        obj.quantity = +countainer.innerText;
+                        document.getElementsByTagName(
+                          'section'
+                        )[0].innerText = ` $ ${obj.quantity * obj.price}`;
                       }
                       if (target.dataset.btn === 'add') {
                         countainer.innerText < params.quantity
                           ? ++countainer.innerText
                           : null;
+                        obj.quantity = +countainer.innerText;
+                        document.getElementsByTagName(
+                          'section'
+                        )[0].innerText = ` $ ${obj.quantity * obj.price}`;
                       }
                     }
                   },
@@ -272,6 +286,7 @@ export function detailsproduct(params) {
                     El({
                       element: 'div',
                       className: 'font-semibold',
+                      id: 'Quantity',
                       child: '1',
                       dataset: { input: 'Quantity' },
                     }),
@@ -291,6 +306,7 @@ export function detailsproduct(params) {
             ],
           }),
         }),
+        TotalPrice(obj),
       ],
     }),
   });

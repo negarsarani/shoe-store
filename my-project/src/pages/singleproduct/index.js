@@ -9,9 +9,8 @@ import { routerFunc } from '@/router';
 
 // }
 export function singleProduct() {
-  settingSwipper();
+
   setTimeout(() => {
-    settingSwipper();
     const id = getCurrentURL()[4].split(':')[1];
     GetData(`product/${id}`).then(
       (res) => render(elem, res.data),
@@ -29,7 +28,7 @@ function render(elem, data) {
   const el = El({
     element: 'div',
     className: 'flex flex-col items-center justify-center',
-    child: [swiperSingleProduct(data), detailsproduct(data), TotalPrice(data)],
+    child: [swiperSingleProduct(data), detailsproduct(data)],
   });
   return elem.append(el);
 }

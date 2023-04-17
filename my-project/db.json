@@ -19,7 +19,7 @@
       "id": 1,
       "brand": "Nike",
       "sizes": [38, 40, 42, 44],
-      "colors": ["blue", "yellow", "purple" , "green"],
+      "colors": ["blue", "yellow"],
       "sold": "1.371 ",
       "name": "Nike Air Max 90 Futura",
       "price": 161,

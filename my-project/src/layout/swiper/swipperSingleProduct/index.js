@@ -2,7 +2,9 @@ import El from '@/library/El';
 import { routerFunc } from '@/router';
 import { settingSwipper } from '../setting';
 export function swiperSingleProduct(params) {
-  settingSwipper()
+  setTimeout(() => {
+    settingSwipper();
+  }, 0);
   const item = params.image;
   return El({
     element: 'div',
@@ -14,8 +16,8 @@ export function swiperSingleProduct(params) {
         child: [
           El({
             element: 'div',
-            className: 'swiper-wrapper w-full cursor-pointer  aspect-square',
-            child: render(item).map(img => img)
+            className: 'swiper-wrapper w-full cursor-pointer ',
+            child: render(item),
           }),
         ],
       }),
@@ -42,14 +44,14 @@ export function swiperSingleProduct(params) {
     ],
   });
 }
-function render( params) {
+function render(params) {
   return params.map((item) => {
-   return El({
+    return El({
       element: 'div',
       className: 'swiper-slide w-full aspect-square	',
       child: El({
         element: 'img',
-        className: 'aspect-square	',
+        className: 'aspect-[3/4]	',
         src: item,
       }),
     });
