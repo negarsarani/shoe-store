@@ -15,7 +15,7 @@ function App() {
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: home(),
+    child: cart(),
   });
 }
 export default App;
