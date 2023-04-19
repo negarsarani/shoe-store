@@ -6,5 +6,5 @@ export function validationForm(e) {
   //   console.log(form);
   const checkbox = form.querySelector('#remember');
   const [email, password] = [...input].map((el) => el.value);
-  checkUser(email, password);
+  checkUser(email, password , checkbox);
 }

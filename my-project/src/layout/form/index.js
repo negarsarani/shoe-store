@@ -48,7 +48,26 @@ export function LoginForm() {
             El({
               element: 'img',
               className: 'cursor-pointer',
-              src: 'assets/svg/eye.svg',
+              src: 'assets/svg/eye-slash.svg',
+              onclick: function name(e) {
+                if (
+                  e.target.src ===
+                  'http://localhost:5173/assets/svg/eye-slash.svg'
+                ) {
+                  setTimeout(() => {
+                    e.target.src = 'assets/svg/eye.svg';
+                    e.target.previousSibling.type = 'text';
+                  }, 0);
+                }
+                if (
+                  e.target.src === 'http://localhost:5173/assets/svg/eye.svg'
+                ) {
+                  setTimeout(() => {
+                    e.target.src = 'assets/svg/eye-slash.svg';
+                    e.target.previousSibling.type = 'password';
+                  }, 0);
+                }
+              },
             }),
           ],
         }),
@@ -66,10 +85,11 @@ export function LoginForm() {
       child: [
         El({
           element: 'input',
-          id:"remember",
+          id: 'remember',
           className:
             'form-checkbox remember text-black bg-black border-2 w-3 h-3 rounded-md',
           type: 'checkbox',
+          checked: true
         }),
         El({
           element: 'span',
@@ -79,7 +99,8 @@ export function LoginForm() {
     }),
     El({
       element: 'div',
-      className: ' notfound invisible text-[.8rem] text-red-600 flex justify-center animate-bounce',
+      className:
+        ' notfound invisible text-[.8rem] text-red-600 flex justify-center animate-bounce',
       child: El({
         element: 'span',
         child: 'User not found',

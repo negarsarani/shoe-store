@@ -22,7 +22,7 @@ function App() {
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: checkoutModal(),
+    child: login(),
   });
 }
 // function check() {

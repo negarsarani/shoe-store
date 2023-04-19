@@ -1,7 +1,7 @@
 import { GetData } from '@/library/Api/GetData';
 import { routerFunc } from '@/router';
 import Cookies from 'js-cookie';
-export function checkUser(email, password) {
+export function checkUser(email, password, checked) {
   const form = document.getElementById('loginform');
   GetData('users').then((res) => {
     const data = res.data;
@@ -10,14 +10,19 @@ export function checkUser(email, password) {
       return item.email === email;
     });
     findUser !== undefined
-      ? handleform(findUser, email, password)
+      ? handleform(findUser, email, password, checked)
       : notfound(form);
   });
 }
-function handleform(findUser, email, password) {
+function handleform(findUser, email, password, checked) {
   const form = document.getElementById('loginform');
   if (findUser.email === email && findUser.password == password) {
-    Cookies.set('user', email, { expires: 7 });
+    if (checked.checked === true) {
+      Cookies.set('user', email, { expires: 7 });
+    }
+    if (checked.checked === false) {
+      Cookies.set('user', email);
+    }
     form.reset();
     routerFunc().navigate('/home');
   } else if (findUser.email === email && findUser.password !== password) {
