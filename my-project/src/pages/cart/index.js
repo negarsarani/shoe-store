@@ -1,3 +1,4 @@
+import footerMenue from '@/layout/footer';
 import { EachCart } from '@/library/Cart/EachCart';
 import { renderCart } from '@/library/Cart/render';
 import El from '@/library/El';
@@ -6,7 +7,8 @@ import { HeaderSearch } from '@/library/headerSearch/Headersearch';
 export function cart(params) {
   return El({
     element: 'div',
-    className: '',
+    className: 'relative',
+    id: 'cart',
     child: [
       HeaderSearch({
         text: 'My Cart',
@@ -14,9 +16,11 @@ export function cart(params) {
       }),
       El({
         element: 'div',
-        id:"ParentCard",
-        child: renderCart()
+        id: 'ParentCard',
+        className: 'pb-10',
+        child: renderCart(),
       }),
+      footerMenue()
     ],
   });
 }

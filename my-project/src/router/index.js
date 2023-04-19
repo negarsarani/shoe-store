@@ -7,6 +7,7 @@ import { singleProduct } from '@/pages/singleproduct';
 import { onboarding } from '@/pages/onboarding';
 import { getCurrentURL } from '@/library/CurrentUrl/CurrentUrl';
 import { settingSwipper } from '@/layout';
+import { cart } from '@/pages/cart';
 
 // Adding a route
 export function routerFunc() {
@@ -27,8 +28,10 @@ export function routerFunc() {
     .on('/product:id', function () {
       routediv.innerHTML = '';
       routediv.append(singleProduct());
-
-  
+    })
+    .on('/cart', function () {
+      routediv.innerHTML = '';
+      routediv.append(cart());
     })
     .resolve();
    

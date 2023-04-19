@@ -9,13 +9,23 @@ import { home } from './pages/home';
 import { Loading } from './library/loading';
 import { singleProduct } from './pages/singleproduct';
 import { cart } from './pages/cart';
+import { checkUser } from './layout/form/functions';
+import Cookies from 'js-cookie';
+import { chechout } from './layout/chechout/checkout1';
 function App() {
-  settingSwipper()
+  settingSwipper();
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: cart(),
+    child: chechout(),
   });
 }
+// function check() {
+//   if (Cookies.get('user')) {
+//     return home();
+//   } else {
+//     return onboarding();
+//   }
+// }
 export default App;

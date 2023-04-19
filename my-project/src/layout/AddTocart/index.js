@@ -18,23 +18,23 @@ export async function AddTocart() {
     user.cart = [objSingle];
   } else {
     user.cart.map((item) => {
-      if (item.id === objSingle.id) {
+      if (item.name === objSingle.name) {
         if (item.size === objSingle.size && item.color === objSingle.color) {
-          console.log("s");
-        } else if (
+          null
+        }  if (
           item.size !== objSingle.size ||
           item.color !== objSingle.color
         ) {
-          console.log("f");
+          console.log('f');
           user.cart = [...user.cart, objSingle];
         }
-      }
-      else{
-        console.log("w");
-        user.cart = [...user.cart, objSingle];
+      } else {
+        console.log('w');
       }
     });
   }
+  user.cart = [...user.cart, objSingle];
+  console.log(user);
   await axios.put(`http://localhost:3010/users/${userId}`, user, {
     headers: {
       'Content-Type': 'application/json',

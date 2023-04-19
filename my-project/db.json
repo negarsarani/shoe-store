@@ -9,33 +9,23 @@
       "cart": [
         {
           "id": 1,
-          "Userquantity": 4,
+          "Userquantity": 2,
           "color": "blue",
-          "size": "42",
+          "size": "40",
           "img": "https://img01.ztat.net/article/spp-media-p1/1ab00f95651f4fcdb0baabe3efe6d632/4fe2f141a7be4dc3960de2f75c3ba996.jpg?imwidth=1800&filter=packshot",
           "price": 161,
           "name": "Nike Air Max 90 Futura",
           "MainQuntity": 5
         },
         {
-          "id": 2,
-          "Userquantity": 4,
-          "color": "red",
+          "id": 7,
+          "Userquantity": 3,
+          "color": "amber",
           "size": "40",
-          "img": "https://img01.ztat.net/article/spp-media-p1/1bb35785bad34016952cdb808840b8a6/3b9b4fabad8648cb8ce8606bb15d46f4.jpg?imwidth=1800",
-          "price": 120,
-          "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
-          "MainQuntity": 4
-        },
-        {
-          "id": 2,
-          "Userquantity": 4,
-          "color": "red",
-          "size": "40",
-          "img": "https://img01.ztat.net/article/spp-media-p1/1bb35785bad34016952cdb808840b8a6/3b9b4fabad8648cb8ce8606bb15d46f4.jpg?imwidth=1800",
-          "price": 120,
-          "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
-          "MainQuntity": 4
+          "img": "https://img01.ztat.net/article/spp-media-p1/126f62b409f94d3dbcda121a003f323d/a5e77a3732fa4e6998e543c0a9b3a701.jpg?imwidth=1800&filter=packshot",
+          "price": 100,
+          "name": "Vans Men's Mn Skate Slip-on Sneaker",
+          "MainQuntity": 10
         }
       ]
     },
