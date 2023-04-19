@@ -53,19 +53,19 @@ export function descpages() {
 
             swiper.slideNext();
           },
-          eventListener: [
-            {
-              event: 'click',
-              callback: changeRoute,
-            },
-          ],
+          // eventListener: [
+          //   {
+          //     event: 'click',
+          //     callback: changeRoute,
+          //   },r
+          // ],
         }),
       }),
     ],
   });
 }
 
-function changeRoute(e) {
-  if (e.target.innerText === 'Get Started') {
-  }
-}
+// function changeRoute(e) {
+//   if (e.target.innerText === 'Get Started') {
+//   }
+// }

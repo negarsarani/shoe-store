@@ -1,12 +1,15 @@
 import El from '@/library/El';
 import { renderColor, renderSize } from './render';
 import { TotalPrice } from '@/library/totalprice/Totalprice';
+import { objSingle } from '@/pages/singleproduct';
 
 export function detailsproduct(params) {
   const obj = {
     quantity: 1,
     price: params.price,
   };
+
+
   return El({
     element: 'div',
     className: ' w-full ',
@@ -150,6 +153,7 @@ export function detailsproduct(params) {
                       const target = e.target;
                       if (target.dataset) {
                         const mainsize = target.dataset.size;
+                        mainsize !== undefined ? (objSingle.size = mainsize) : null;
                         const parent = target.parentElement.parentElement;
                         if (parent.dataset.parentDiv) {
                           const [...child] =
@@ -200,6 +204,8 @@ export function detailsproduct(params) {
                     className: 'menu-scroll-x overflow-x-scroll',
                     onclick: function name(e) {
                       const target = e.target;
+                      const mainColor = target.dataset.color;
+                      mainColor !== undefined ? (objSingle.color = mainColor) : null;
                       if (target.dataset.color) {
                         const parent = target.parentElement.parentElement;
                         const [...child] =
@@ -260,6 +266,7 @@ export function detailsproduct(params) {
                         document.getElementsByTagName(
                           'section'
                         )[0].innerText = ` $ ${obj.quantity * obj.price}`;
+                        objSingle.quantity = +countainer.innerText;
                       }
                       if (target.dataset.btn === 'add') {
                         countainer.innerText < params.quantity
@@ -269,6 +276,7 @@ export function detailsproduct(params) {
                         document.getElementsByTagName(
                           'section'
                         )[0].innerText = ` $ ${obj.quantity * obj.price}`;
+                        objSingle.Userquantity = +countainer.innerText;
                       }
                     }
                   },
@@ -310,4 +318,12 @@ export function detailsproduct(params) {
       ],
     }),
   });
+}
+
+export function createData(params) {
+  
+  const arr = []
+  // arr.push(params)
+  // localStorage.setItem("myCart", arr)
+  // return data;
 }

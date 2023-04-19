@@ -6,6 +6,7 @@ export function checkUser(email, password) {
   GetData('users').then((res) => {
     const data = res.data;
     const findUser = data.find((item) => {
+      getID(item);
       return item.email === email;
     });
     findUser !== undefined
@@ -30,4 +31,7 @@ function notfound(form) {
   setTimeout(() => {
     form.querySelector('.notfound').classList.add('invisible');
   }, 2000);
+}
+function getID(item) {
+  Cookies.set('id', item.id);
 }

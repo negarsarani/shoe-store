@@ -26,7 +26,6 @@ export function routerFunc() {
     })
     .on('/product:id', function () {
       routediv.innerHTML = '';
-      settingSwipper()
       routediv.append(singleProduct());
 
   

@@ -1,25 +1,67 @@
 {
   "users": [
     {
+      "id": "1",
       "name": "negar sarani",
       "email": "negar.sarani2002@gmail.com",
       "password": "123",
-      "image": "assets/profiles/p-1.jpg"
+      "image": "assets/profiles/p-1.jpg",
+      "cart": [
+        {
+          "id": 1,
+          "Userquantity": 4,
+          "color": "blue",
+          "size": "42",
+          "img": "https://img01.ztat.net/article/spp-media-p1/1ab00f95651f4fcdb0baabe3efe6d632/4fe2f141a7be4dc3960de2f75c3ba996.jpg?imwidth=1800&filter=packshot",
+          "price": 161,
+          "name": "Nike Air Max 90 Futura",
+          "MainQuntity": 5
+        },
+        {
+          "id": 2,
+          "Userquantity": 4,
+          "color": "red",
+          "size": "40",
+          "img": "https://img01.ztat.net/article/spp-media-p1/1bb35785bad34016952cdb808840b8a6/3b9b4fabad8648cb8ce8606bb15d46f4.jpg?imwidth=1800",
+          "price": 120,
+          "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
+          "MainQuntity": 4
+        },
+        {
+          "id": 2,
+          "Userquantity": 4,
+          "color": "red",
+          "size": "40",
+          "img": "https://img01.ztat.net/article/spp-media-p1/1bb35785bad34016952cdb808840b8a6/3b9b4fabad8648cb8ce8606bb15d46f4.jpg?imwidth=1800",
+          "price": 120,
+          "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
+          "MainQuntity": 4
+        }
+      ]
     },
     {
+      "id": "2",
       "name": "niloofar sarani",
       "email": "nilo.sarani2002@gmail.com",
       "password": "102030Nillo",
-      "image": "assets/profiles/p-2.jpg"
+      "image": "assets/profiles/p-2.jpg",
+      "cart": []
     }
   ],
-
   "product": [
     {
       "id": 1,
       "brand": "Nike",
-      "sizes": [38, 40, 42, 44],
-      "colors": ["blue", "yellow"],
+      "sizes": [
+        38,
+        40,
+        42,
+        44
+      ],
+      "colors": [
+        "blue",
+        "yellow"
+      ],
       "sold": "1.371 ",
       "name": "Nike Air Max 90 Futura",
       "price": 161,
@@ -39,8 +81,16 @@
     {
       "id": 2,
       "brand": "Adidas",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "red"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "red"
+      ],
       "sold": "5.471 ",
       "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
       "price": 120,
@@ -53,15 +103,25 @@
       "description": "For A Forward-Thinking Look, Choose These Men'S Adidas Running-Inspired Shoes. They Have The Stability You Need With A Chunky Outsole And A Lightweight Cloudfoam Midsole. The Synthetic Upper Has Contrasting 3-Stripes For A Unique Look. Made With A Series Of Recycled Materials, This Upper Features At Least 50% Recycled Content. This Product Represents Just One Of Our Solutions To Help End Plastic Waste.",
       "quantity": 4,
       "rating": {
-        "rate": 4.0,
+        "rate": 4,
         "count": 300
       }
     },
     {
       "id": 3,
       "brand": "Reebok",
-      "sizes": [32, 36, 40],
-      "colors": ["pink", "yellow", "purple", "cyan", "green"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "pink",
+        "yellow",
+        "purple",
+        "cyan",
+        "green"
+      ],
       "sold": "5.471 ",
       "name": "Reebok X LOONEY TUNES CLUB C 85 UNISEX - Trainers",
       "price": 180,
@@ -73,15 +133,24 @@
       "description": "An upgraded version of Stride Runner designed specially for Walking category. Extremely light weight product with Astrofoam Technolgy Outsole which gives extreme comfort at this price point.",
       "quantity": 20,
       "rating": {
-        "rate": 5.0,
+        "rate": 5,
         "count": 400
       }
     },
     {
       "id": 4,
       "brand": "Asics",
-      "sizes": [32, 36, 40],
-      "colors": ["yellow", "blue", "pink", "violet"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "yellow",
+        "blue",
+        "pink",
+        "violet"
+      ],
       "sold": "3.471 ",
       "name": "Asics Unisex-Adult Gel-1130 Track and Field Shoe",
       "price": 250,
@@ -101,8 +170,18 @@
     {
       "id": 5,
       "brand": "Converse",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple", "rose", "pink"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple",
+        "rose",
+        "pink"
+      ],
       "sold": "4.471 ",
       "name": "Converse Men's Run Star Hike High Top Sneakers",
       "price": 250,
@@ -123,8 +202,17 @@
     {
       "id": 6,
       "brand": "New balance",
-      "sizes": [32, 36, 40],
-      "colors": ["green", "rose", "purple", "blue"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "green",
+        "rose",
+        "purple",
+        "blue"
+      ],
       "sold": "471 ",
       "name": "new balance Women's 850 Pink/White Running Shoe",
       "price": 150,
@@ -144,8 +232,16 @@
     {
       "id": 7,
       "brand": "Vans",
-      "sizes": [32, 36, 40],
-      "colors": ["rose", "amber", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "rose",
+        "amber",
+        "purple"
+      ],
       "sold": "471 ",
       "name": "Vans Men's Mn Skate Slip-on Sneaker",
       "price": 100,
@@ -159,15 +255,23 @@
       "description": "Vans Men (Krooked by Natas for Ray) black Canvas Casual Sneakers",
       "quantity": 10,
       "rating": {
-        "rate": 4.0,
+        "rate": 4,
         "count": 200
       }
     },
     {
       "id": 8,
       "brand": "Vans",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "471 ",
       "name": "Nike Women's Air Max 270 React",
       "price": 500,
@@ -184,12 +288,21 @@
         "rate": 4.9,
         "count": 200
       }
-    }, 
+    },
     {
       "id": 9,
       "brand": "Nike",
-      "sizes": [38, 40, 42, 44],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        38,
+        40,
+        42,
+        44
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "1.371 ",
       "name": "Nike Air Max 90 Futura",
       "price": 161,
@@ -209,8 +322,16 @@
     {
       "id": 10,
       "brand": "Adidas",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "5.471 ",
       "name": "Adidas TERREX FREE HIKER 2 BCA WANDERSCHUH",
       "price": 120,
@@ -223,15 +344,23 @@
       "description": "For A Forward-Thinking Look, Choose These Men'S Adidas Running-Inspired Shoes. They Have The Stability You Need With A Chunky Outsole And A Lightweight Cloudfoam Midsole. The Synthetic Upper Has Contrasting 3-Stripes For A Unique Look. Made With A Series Of Recycled Materials, This Upper Features At Least 50% Recycled Content. This Product Represents Just One Of Our Solutions To Help End Plastic Waste.",
       "quantity": 10,
       "rating": {
-        "rate": 4.0,
+        "rate": 4,
         "count": 300
       }
     },
     {
       "id": 11,
       "brand": "Reebok",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "5.471 ",
       "name": "Reebok X LOONEY TUNES CLUB C 85 UNISEX - Trainers",
       "price": 180,
@@ -243,15 +372,23 @@
       "description": "An upgraded version of Stride Runner designed specially for Walking category. Extremely light weight product with Astrofoam Technolgy Outsole which gives extreme comfort at this price point.",
       "quantity": 20,
       "rating": {
-        "rate": 5.0,
+        "rate": 5,
         "count": 400
       }
     },
     {
       "id": 12,
       "brand": "Asics",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "3.471 ",
       "name": "Asics Unisex-Adult Gel-1130 Track and Field Shoe",
       "price": 250,
@@ -269,10 +406,18 @@
       }
     },
     {
-      "id":13,
+      "id": 13,
       "brand": "Converse",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "4.471 ",
       "name": "Converse Men's Run Star Hike High Top Sneakers",
       "price": 250,
@@ -293,8 +438,16 @@
     {
       "id": 14,
       "brand": "New balance",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "471 ",
       "name": "new balance Women's 850 Pink/White Running Shoe",
       "price": 150,
@@ -314,8 +467,16 @@
     {
       "id": 15,
       "brand": "Vans",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "471 ",
       "name": "Vans Men's Mn Skate Slip-on Sneaker",
       "price": 100,
@@ -329,15 +490,23 @@
       "description": "Vans Men (Krooked by Natas for Ray) black Canvas Casual Sneakers",
       "quantity": 10,
       "rating": {
-        "rate": 4.0,
+        "rate": 4,
         "count": 200
       }
     },
     {
       "id": 16,
       "brand": "Vans",
-      "sizes": [32, 36, 40],
-      "colors": ["blue", "yellow", "purple"],
+      "sizes": [
+        32,
+        36,
+        40
+      ],
+      "colors": [
+        "blue",
+        "yellow",
+        "purple"
+      ],
       "sold": "471 ",
       "name": "Nike Women's Air Max 270 React",
       "price": 500,
@@ -356,7 +525,6 @@
       }
     }
   ],
-
   "brands": [
     {
       "name": "Nike",
@@ -386,7 +554,6 @@
       "name": "Converse",
       "image": "https://1000logos.net/wp-content/uploads/2021/04/Converse-logo.png"
     },
-
     "Vans",
     "Skechers",
     "Fila",

@@ -1,25 +1,32 @@
+import { trashBtn } from '@/layout/tarshbtn';
 import { GetData } from '../Api/GetData';
 import { getCurrentURL } from '../CurrentUrl/CurrentUrl';
 import El from '../El';
+import Colorpicker from '../Colorpicker';
 
-export function EachCart(params) {
+export function EachCart(item) {
   return El({
     element: 'div',
-    className: 'flex itmes-center justify-center gap-5 bg-red-300  p-3',
-    // id:params.id,
+    className: 'flex itmes-center justify-center gap-5  shadow-3xl p-3',
+    id: `${2}`,
     child: [
       El({
         element: 'div',
-        className: 'bg-blue-200 w-4/12 rounded-xl',
+        className: ' w-28 ',
         child: El({
-          element: 'img',
-          className: '',
-          src: '',
+          element: 'div',
+          className: 'w-full',
+          child: El({
+            element: 'img',
+            className: 'rounded-2xl ',
+            src: `${item.img}`,
+          }),
         }),
       }),
       El({
         element: 'div',
-        className: 'flex flex-col itmes-start justify-start gap-2 w-8/12',
+        className:
+          'flex flex-col itmes-start justify-start gap-2 flex-grow w-10 ',
         child: [
           El({
             element: 'div',
@@ -27,12 +34,13 @@ export function EachCart(params) {
             child: [
               El({
                 element: 'div',
-                className: 'flex flex-col itmes-start gap-2 ',
+                className:
+                  'flex flex-col itmes-start gap-2 overflow-hidden text-ellipsis truncate w-10/12 ',
                 child: [
                   El({
                     element: 'div',
-                    className: '',
-                    child: 'Air jordan jjj jjj ',
+                    className: 'overflow-hidden text-ellipsis truncate ',
+                    child: item.name,
                   }),
                   El({
                     element: 'div',
@@ -44,13 +52,15 @@ export function EachCart(params) {
                         child: [
                           El({
                             element: 'div',
-                            className: `rounded-full w-4 h-4 bg-blue-300`,
+                            className: `rounded-full w-4 h-4 ${Colorpicker(
+                              item.color
+                            )}`,
                             child: '',
                           }),
                           El({
                             element: 'div',
                             className: '',
-                            child: 'black',
+                            child: item.color,
                           }),
                         ],
                       }),
@@ -62,7 +72,7 @@ export function EachCart(params) {
                       El({
                         element: 'div',
                         className: '',
-                        child: `size = 41`,
+                        child: `size = ${item.size}`,
                       }),
                     ],
                   }),
@@ -70,10 +80,12 @@ export function EachCart(params) {
               }),
               El({
                 element: 'div',
-                className: 'cursor-pointer',
+                className: '',
                 child: El({
                   element: 'img',
-                  className: 'w-5',
+                  className: 'w-5 cursor-pointer',
+                  dataset: { id: `${item.id}` },
+                  eventListener: [{ event: 'click', callback: trashBtn }],
                   src: 'assets/svg/trash.svg',
                 }),
               }),
@@ -87,7 +99,7 @@ export function EachCart(params) {
               El({
                 element: 'div',
                 className: 'font-semibold',
-                child: `$ ${1}`,
+                child: `$ ${item.Userquantity * item.price}`,
               }),
               El({
                 element: 'div',
@@ -95,7 +107,7 @@ export function EachCart(params) {
                 child: El({
                   element: 'div',
                   className: 'bg-bg-card flex gap-5 py-2 px-4  rounded-3xl',
-                  dataset: { main: '5' },
+                  dataset: { main: item.MainQuntity },
                   child: [
                     El({
                       element: 'div',
@@ -111,7 +123,7 @@ export function EachCart(params) {
                       element: 'div',
                       className: 'font-semibold',
                       id: 'Quantity',
-                      child: '1',
+                      child: +item.Userquantity,
                       dataset: { input: 'Quantity' },
                     }),
                     El({
@@ -151,7 +163,9 @@ function handlebtn(e) {
       // )[0].innerText = ` $ ${obj.quantity * obj.price}`;
     }
     if (target.dataset.btn === 'add') {
-      countainer.innerText < +parent.dataset.main ? ++countainer.innerText : null;
+      countainer.innerText < +parent.dataset.main
+        ? ++countainer.innerText
+        : null;
       // obj.quantity = +countainer.innerText;
       // document.getElementsByTagName(
       //   'section'

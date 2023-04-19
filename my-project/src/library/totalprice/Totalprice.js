@@ -1,6 +1,6 @@
+import { AddTocart } from '@/layout/AddTocart';
 import El from '../El';
 export function TotalPrice(params) {
-  console.log(params);
   return El({
     element: 'footer',
     className: 'w-full px-3 ',
@@ -26,6 +26,7 @@ export function TotalPrice(params) {
         }),
         El({
           element: 'div',
+          onclick: handleBtn,
           className:
             'bg-btn-black rounded-3xl flex items-center justify-center flex-grow gap-2 px-4 py-3 shadow-2xl cursor-pointer',
           child: [
@@ -48,4 +49,12 @@ export function TotalPrice(params) {
       ],
     }),
   });
+}
+function handleBtn(e) {
+  const target = e.target;
+  if (target.innerText === 'Add to cart') {
+    AddTocart()
+  }
+  if (target.innerText === 'Checkout') {
+  }
 }
