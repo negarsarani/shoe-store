@@ -12,13 +12,17 @@ import { cart } from './pages/cart';
 import { checkUser } from './layout/form/functions';
 import Cookies from 'js-cookie';
 import { chechout } from './layout/chechout/checkout1';
+import chooseShipping from './layout/chechout/checkout3';
+import shippingAddress from './layout/chechout/checkout2';
+import payment from './layout/chechout/checkout4';
+import checkoutModal from './layout/chechout/checkoutModal';
 function App() {
   settingSwipper();
   return El({
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: chechout(),
+    child: checkoutModal(),
   });
 }
 // function check() {

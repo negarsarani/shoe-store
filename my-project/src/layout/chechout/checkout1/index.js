@@ -14,9 +14,10 @@ export function chechout() {
             className: 'flex gap-3',
             child: [
               El({
-                element: 'ion-icon',
+                element: 'img',
                 name: 'arrow-back',
                 className: 'text-3xl',
+                src:"./assets/svg/arrow.svg"
               }),
               El({
                 element: 'h1',
@@ -41,7 +42,7 @@ export function chechout() {
       El({
         element: 'div',
         className:
-          'flex items-center justify-between text-left p-4 shadow-md rounded',
+          'flex items-center justify-between text-left p-4 shadow-md border rounded-xl',
         child: [
           El({
             element: 'div',
@@ -59,10 +60,11 @@ export function chechout() {
                       'absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-black rounded-full w-16 h-16 text-center',
                     child: [
                       El({
-                        element: 'ion-icon',
+                        element: 'img',
                         name: 'location',
                         className:
                           'absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white z-10 text-4xl',
+                          src:"assets/svg/loaction.svg"
                       }),
                     ],
                   }),
@@ -87,9 +89,10 @@ export function chechout() {
           }),
 
           El({
-            element: 'ion-icon',
+            element: 'img',
             name: 'pencil',
             className: 'text-3xl',
+            src:"assets/svg/pen.svg"
           }),
         ],
       }),

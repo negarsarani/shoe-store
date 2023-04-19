@@ -1,4 +1,5 @@
-import El from '@/library/index.js';
+import El from '@/library/El';
+
 const checkoutModal = () => {
   return El({
     element: 'div',
@@ -12,7 +13,7 @@ const checkoutModal = () => {
         child: [
           El({
             element: 'img',
-            src: './img/pics/shopping-cart.png',
+            src: 'assets/img/shopping-cart.png',
             className: 'w-44',
           }),
           El({
