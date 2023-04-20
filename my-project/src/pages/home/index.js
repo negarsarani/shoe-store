@@ -41,7 +41,7 @@ export function home(params) {
         El({
           element: 'div',
           className: '',
-          child: footerMenue(),
+          child: footerMenue("fixed bottom-0 left-0 "),
         }),
       ],
     }),

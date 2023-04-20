@@ -1,6 +1,7 @@
 import { AddTocart } from '@/layout/AddTocart';
 import El from '../El';
-export function TotalPrice(params) {
+import { routerFunc } from '@/router';
+export function TotalPrice(params , btn) {
   return El({
     element: 'footer',
     className: 'w-full px-3 ',
@@ -42,7 +43,7 @@ export function TotalPrice(params) {
             El({
               element: 'span',
               className: 'text-white',
-              child: 'Add to cart',
+              child: btn,
             }),
           ],
         }),
@@ -56,5 +57,6 @@ function handleBtn(e) {
     AddTocart()
   }
   if (target.innerText === 'Checkout') {
+    routerFunc().navigate("./")
   }
 }

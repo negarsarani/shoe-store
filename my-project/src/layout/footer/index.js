@@ -1,11 +1,10 @@
 import El from '@/library/El';
 import { routerFunc } from '@/router';
 
-export function footerMenue(params) {
+export function footerMenue(params = '') {
   return El({
     element: 'footer',
-    className:
-      'fixed bottom-0 left-0  block xl:hidden w-full z-[1000] bg-[#ffff] px-4 ',
+    className: ` ${params} block xl:hidden w-full z-[1000] bg-[#ffff] px-4 `,
     child: [
       El({
         element: 'div',

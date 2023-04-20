@@ -5,10 +5,17 @@ import El from '../El';
 import Colorpicker from '../Colorpicker';
 
 export function EachCart(item) {
+  let obj = {
+    quantity: '',
+    price: '',
+  };
+  obj.quantity = item.Userquantity;
+  obj.price = item.price;
   return El({
     element: 'div',
     className: 'flex itmes-center justify-center gap-5  shadow-3xl p-3',
     id: `${2}`,
+    dataset: { cart: item.id },
     child: [
       El({
         element: 'div',
@@ -94,10 +101,37 @@ export function EachCart(item) {
           El({
             element: 'div',
             className: 'flex items-center justify-between gap-4',
-            eventListener: [{ event: 'click', callback: handlebtn }],
+            onclick: function name(e) {
+              console.log(obj);
+              const target = e.target;
+              if (target.dataset.btn) {
+                const parent = target.parentElement.parentElement;
+                const countainer = parent.querySelector('[data-input]');
+                if (target.dataset.btn === 'minus') {
+                  countainer.innerText > 1
+                    ? (countainer.innerText = --countainer.innerText)
+                    : null;
+                  obj.quantity = +countainer.innerText;
+                  parent.parentElement.parentElement.getElementsByTagName(
+                    'section'
+                  )[0].innerText = ` $ ${obj.quantity * obj.price}`;
+
+
+                }
+                if (target.dataset.btn === 'add') {
+                  countainer.innerText < +parent.dataset.main
+                    ? ++countainer.innerText
+                    : null;
+                  obj.quantity = +countainer.innerText;
+                  parent.parentElement.parentElement.getElementsByTagName(
+                    'section'
+                  )[0].innerText = ` $ ${obj.quantity * obj.price}`;
+                }
+              }
+            },
             child: [
               El({
-                element: 'div',
+                element: 'section',
                 className: 'font-semibold',
                 child: `$ ${item.Userquantity * item.price}`,
               }),
@@ -147,29 +181,3 @@ export function EachCart(item) {
   });
 }
 
-function handlebtn(e) {
-  const target = e.target;
-  if (target.dataset.btn) {
-    const parent = target.parentElement.parentElement;
-    const countainer = parent.querySelector('[data-input]');
-
-    if (target.dataset.btn === 'minus') {
-      countainer.innerText > 1
-        ? (countainer.innerText = --countainer.innerText)
-        : null;
-      // obj.quantity = +countainer.innerText;
-      // document.getElementsByTagName(
-      //   'section'
-      // )[0].innerText = ` $ ${obj.quantity * obj.price}`;
-    }
-    if (target.dataset.btn === 'add') {
-      countainer.innerText < +parent.dataset.main
-        ? ++countainer.innerText
-        : null;
-      // obj.quantity = +countainer.innerText;
-      // document.getElementsByTagName(
-      //   'section'
-      // )[0].innerText = ` $ ${obj.quantity * obj.price}`;
-    }
-  }
-}

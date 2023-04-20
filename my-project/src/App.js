@@ -22,14 +22,14 @@ function App() {
     element: 'div',
     className: 'w-full h-full font-Inter ',
     id: 'routes',
-    child: login(),
+    child: cart(),
   });
 }
-// function check() {
-//   if (Cookies.get('user')) {
-//     return home();
-//   } else {
-//     return onboarding();
-//   }
-// }
+function check() {
+  if (Cookies.get('user')) {
+    return home();
+  } else {
+    return onboarding();
+  }
+}
 export default App;

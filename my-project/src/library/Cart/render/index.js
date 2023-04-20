@@ -11,7 +11,7 @@ function render(data, elem) {
 export function renderCart(params) {
   const elem = El({
     element: 'div',
-
+    id:"AllCarts",
     className: 'flex flex-col gap-4 py-3',
   });
   const userId = Cookies.get('id');

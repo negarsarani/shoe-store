@@ -314,7 +314,7 @@ export function detailsproduct(params) {
             ],
           }),
         }),
-        TotalPrice(obj),
+        TotalPrice(obj , "Add to cart"),
       ],
     }),
   });
