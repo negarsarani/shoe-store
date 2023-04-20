@@ -3,6 +3,8 @@ import { GetData } from '../Api/GetData';
 import { getCurrentURL } from '../CurrentUrl/CurrentUrl';
 import El from '../El';
 import Colorpicker from '../Colorpicker';
+import { TotalPrice } from '../totalprice/Totalprice';
+import { totalprice } from '@/pages/cart';
 
 export function EachCart(item) {
   let obj = {
@@ -102,7 +104,6 @@ export function EachCart(item) {
             element: 'div',
             className: 'flex items-center justify-between gap-4',
             onclick: function name(e) {
-              console.log(obj);
               const target = e.target;
               if (target.dataset.btn) {
                 const parent = target.parentElement.parentElement;
@@ -115,8 +116,7 @@ export function EachCart(item) {
                   parent.parentElement.parentElement.getElementsByTagName(
                     'section'
                   )[0].innerText = ` $ ${obj.quantity * obj.price}`;
-
-
+                  totalprice();
                 }
                 if (target.dataset.btn === 'add') {
                   countainer.innerText < +parent.dataset.main
@@ -126,6 +126,7 @@ export function EachCart(item) {
                   parent.parentElement.parentElement.getElementsByTagName(
                     'section'
                   )[0].innerText = ` $ ${obj.quantity * obj.price}`;
+                  totalprice();
                 }
               }
             },
@@ -133,6 +134,7 @@ export function EachCart(item) {
               El({
                 element: 'section',
                 className: 'font-semibold',
+                id: 'TOTAL',
                 child: `$ ${item.Userquantity * item.price}`,
               }),
               El({
@@ -180,4 +182,3 @@ export function EachCart(item) {
     ],
   });
 }
-

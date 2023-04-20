@@ -1,4 +1,5 @@
 import El from '@/library/El';
+import { routerFunc } from '@/router';
 
 const checkoutModal = () => {
   return El({
@@ -43,6 +44,9 @@ const checkoutModal = () => {
                         element: 'p',
                         className: 'self-center text-md font-bold',
                         child: 'View Order',
+                        onclick: function name(params) {
+                          routerFunc().navigate('/order');
+                        },
                       }),
                     ],
                   }),
@@ -67,6 +71,9 @@ const checkoutModal = () => {
                         element: 'p',
                         className: 'self-center text-md font-bold',
                         child: 'View E-Receipt',
+                        onclick: function name(params) {
+                          routerFunc().navigate('/home');
+                        },
                       }),
                     ],
                   }),

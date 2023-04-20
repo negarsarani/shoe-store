@@ -1,6 +1,7 @@
 import El from '@/library/El';
+import { routerFunc } from '@/router';
 
-export function chechout() {
+export function checkout() {
   return El({
     element: 'div',
     className: 'p-4 items-center',
@@ -17,7 +18,10 @@ export function chechout() {
                 element: 'img',
                 name: 'arrow-back',
                 className: 'text-3xl',
-                src:"./assets/svg/arrow.svg"
+                src: './assets/svg/arrow.svg',
+                onclick:function name(params) {
+                  routerFunc().navigate("/cart")
+                }
               }),
               El({
                 element: 'h1',
@@ -64,7 +68,7 @@ export function chechout() {
                         name: 'location',
                         className:
                           'absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white z-10 text-4xl',
-                          src:"assets/svg/loaction.svg"
+                        src: 'assets/svg/loaction.svg',
                       }),
                     ],
                   }),
@@ -92,7 +96,7 @@ export function chechout() {
             element: 'img',
             name: 'pencil',
             className: 'text-3xl',
-            src:"assets/svg/pen.svg"
+            src: 'assets/svg/pen.svg',
           }),
         ],
       }),
@@ -442,21 +446,26 @@ export function chechout() {
         child: [
           El({
             element: 'button',
-            className: ' bg-black rounded-full w-full py-6',
+            className: ' bg-btn-black rounded-full w-full px-6 py-2',
             child: [
               El({
                 element: 'div',
                 className: 'flex items-center text-white justify-center',
+               
                 child: [
                   El({
                     element: 'p',
                     className: 'self-center text-xl font-bold',
                     child: 'Continue to Payment',
+                    onclick: function name(params) {
+                      console.log('A');
+                      routerFunc().navigate('/shippingAddress');
+                    },
                   }),
                   El({
                     element: 'ion-icon',
                     name: 'arrow-redo',
-                    className: 'text-xl font-bold',
+                    className: 'text-md ',
                   }),
                 ],
               }),

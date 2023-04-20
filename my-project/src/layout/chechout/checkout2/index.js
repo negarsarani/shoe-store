@@ -1,4 +1,5 @@
 import El from '@/library/El';
+import { routerFunc } from '@/router';
 
 const shippingAddress = () => {
   return El({
@@ -7,7 +8,7 @@ const shippingAddress = () => {
     child: [
       El({
         element: 'div',
-        className: 'p-4',
+        className: 'p-4 pb-40',
         child: [
           El({
             element: 'div',
@@ -22,6 +23,9 @@ const shippingAddress = () => {
                     name: 'arrow-back',
                     className: 'text-3xl',
                     src: 'assets/svg/arrow.svg',
+                    onclick: function name(params) {
+                      routerFunc().navigate('/checkout');
+                    },
                   }),
                   El({
                     element: 'h1',
@@ -371,11 +375,15 @@ const shippingAddress = () => {
       /// //////button black ///////
       El({
         element: 'div',
-        className: ' border absolute px-3 bottom-0 w-full py-10 flex items-center justify-center rounded-t-3xl',
+        className:
+          'bg-white border fixed px-3 bottom-0 w-full py-10 flex items-center justify-center rounded-t-3xl',
+          onclick:function name(params) {
+            routerFunc().navigate("/chooseShipping");
+          },
         child: [
           El({
             element: 'button',
-            className: 'bg-black rounded-full w-full  py-3',
+            className: 'bg-btn-black rounded-full w-full px-6 py-2',
             child: [
               El({
                 element: 'div',
@@ -383,7 +391,7 @@ const shippingAddress = () => {
                 child: [
                   El({
                     element: 'p',
-                    className: 'self-center text-xl font-bold',
+                    className: 'self-center text-md font-bold',
                     child: 'Apply',
                   }),
                 ],

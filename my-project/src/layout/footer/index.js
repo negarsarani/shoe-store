@@ -97,6 +97,7 @@ export function footerMenue(params = '') {
                 child: 'Wallet ',
                 className: '',
               }),
+
             ],
           }),
           El({
